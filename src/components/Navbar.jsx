@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import instaLogo from "../assets/instagram_blanc.png";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -66,10 +67,16 @@ const Navbar = () => {
 
         {/* MENU MOBILE */}
         <div className={`uppercase mobile-menu fixed top-0 right-0 h-full w-full bg-black shadow-lg transform transition-transform duration-300 md:hidden ${isOpen ? "translate-x-0" : "translate-x-full"}`}>
-            <ul className="flex flex-col justify-center space-y-4 w-full h-full text-center">
-                <li><a href="#about" className="block py-2 text-lg hover:text-gray-400" onClick={() => setIsOpen(false)}>Présentation</a></li>
-                <li><a href="#gallery" className="block py-2 text-lg hover:text-gray-400" onClick={() => setIsOpen(false)}>Galerie</a></li>
-                <li><a href="#agenda" className="block py-2 text-lg hover:text-gray-400" onClick={() => setIsOpen(false)}>Agenda</a></li>                    <li><a href="#contact" className="block py-2 text-lg hover:text-gray-400" onClick={() => setIsOpen(false)}>Contact</a></li>
+            <ul className="flex flex-col justify-center space-y-4 w-full h-full text-center gap-4">
+                <li><a href="#about" className={`block text-lg hover:text-gray-400 transition-transform duration-300 ease-in ${isOpen ? "translate-x-0" : "translate-x-full"}`} onClick={() => setIsOpen(false)}>Présentation</a></li>
+                <li><a href="#gallery" className={`block text-lg hover:text-gray-400 transition-transform duration-400 ease-in ${isOpen ? "translate-x-0" : "translate-x-full"}`} onClick={() => setIsOpen(false)}>Galerie</a></li>
+                <li><a href="#agenda" className={`block text-lg hover:text-gray-400 transition-transform duration-500 ease-in ${isOpen ? "translate-x-0" : "translate-x-full"}`} onClick={() => setIsOpen(false)}>Agenda</a></li>
+                <li><a href="#contact" className={`block text-lg hover:text-gray-400 transition-transform duration-600 ease-in ${isOpen ? "translate-x-0" : "translate-x-full"}`} onClick={() => setIsOpen(false)}>Contact</a></li>
+                <li className="self-center">
+                  <a href="https://www.instagram.com/philippegueutal/" target="_blank" rel="noopener noreferrer">
+                    <img src={instaLogo} alt="logo instagram" className={`w-10 transition-all duration-800 ease-in ${isOpen ? "opacity-100 scale-100" : "opacity-0 scale-0"}`} onClick={() => setIsOpen(false)} />
+                  </a>
+                </li>
             </ul>
         </div>
       </div>
