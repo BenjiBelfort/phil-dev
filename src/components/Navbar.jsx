@@ -41,7 +41,7 @@ const Navbar = () => {
             alt="Logo de l'artiste"
             className="h-12 w-auto"
           />
-        <h1 className="hidden md:flex">bullet art</h1>
+        {/* <h1 className="hidden md:flex">bullet art</h1> */}
         </div>
 
         {/* MENU EN VERSION GRAND ÉCRAN */}

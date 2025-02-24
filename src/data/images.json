@@ -1,0 +1,16 @@
+[
+    { "id": 101, "path": "/bullet_art/bullet_homer.webp", "alt":"alt de l'image", "category": "bullet-art" },
+    { "id": 102, "path": "/bullet_art/bullet_buzz.webp", "alt":"alt de l'image", "category": "bullet-art" },
+    { "id": 102, "path": "/bullet_art/bang.webp", "alt":"alt de l'image", "category": "bullet-art" },
+
+
+    { "id": 201, "path": "/mondrian/mondrian1.webp", "alt":"alt de l'image", "category": "mondrian" },
+    { "id": 202, "path": "/mondrian/mondrian-simpson.webp", "alt":"alt de l'image", "category": "mondrian" },
+
+
+
+    { "id": 301, "path": "/autre/lego.webp", "alt":"alt de l'image", "category": "autres" },
+    { "id": 302, "path": "/autre/france.webp", "alt":"alt de l'image", "category": "autres" },
+    { "id": 303, "path": "/autre/Blue_one.webp", "alt":"alt de l'image", "category": "autres" },
+    { "id": 304, "path": "/autre/graph.webp", "alt":"alt de l'image", "category": "autres" }
+  ]
