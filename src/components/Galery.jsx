@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useMemo } from "react";
 import imagesData from "../data/images.json";
 
 const Galery = () => {
@@ -8,13 +8,15 @@ const Galery = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [fade, setFade] = useState(false);
 
+  // Mélanger une seule fois les images au montage du composant
   useEffect(() => {
-    const shuffledImages = [...imagesData].sort(() => Math.random() - 0.5);
-    setImages(shuffledImages);
+    setImages([...imagesData].sort(() => Math.random() - 0.5));
   }, []);
 
-  const filteredImages =
-    filter === "all" ? images : images.filter((img) => img.category === filter);
+  // Appliquer le filtre sans changer l'ordre
+  const filteredImages = useMemo(() => {
+    return filter === "all" ? images : images.filter((img) => img.category === filter);
+  }, [filter, images]);
 
   const openLightbox = (index) => {
     setCurrentIndex(index);
@@ -33,58 +35,13 @@ const Galery = () => {
     }, 200);
   };
 
-  const nextImage = useCallback(() => {
+  const nextImage = () => {
     changeImage((currentIndex + 1) % filteredImages.length);
-  }, [currentIndex, filteredImages.length]);
+  };
 
-  const prevImage = useCallback(() => {
+  const prevImage = () => {
     changeImage((currentIndex - 1 + filteredImages.length) % filteredImages.length);
-  }, [currentIndex, filteredImages.length]);
-
-  useEffect(() => {
-    if (lightboxOpen) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "";
-    }
-  
-    return () => {
-      document.body.style.overflow = "";
-    };
-  }, [lightboxOpen]);
-
-
-  useEffect(() => {
-    if (!lightboxOpen) return;
-
-    const handleKeyDown = (e) => {
-      if (e.key === "ArrowRight") nextImage();
-      if (e.key === "ArrowLeft") prevImage();
-      if (e.key === "Escape") closeLightbox();
-    };
-
-    window.addEventListener("keydown", handleKeyDown);
-    return () => window.removeEventListener("keydown", handleKeyDown);
-  }, [lightboxOpen, nextImage, prevImage]);
-
-  useEffect(() => {
-    if (!lightboxOpen) return;
-
-    let touchStartX = 0;
-    const handleTouchStart = (e) => (touchStartX = e.touches[0].clientX);
-    const handleTouchEnd = (e) => {
-      const touchEndX = e.changedTouches[0].clientX;
-      if (touchStartX - touchEndX > 50) nextImage();
-      if (touchEndX - touchStartX > 50) prevImage();
-    };
-
-    window.addEventListener("touchstart", handleTouchStart);
-    window.addEventListener("touchend", handleTouchEnd);
-    return () => {
-      window.removeEventListener("touchstart", handleTouchStart);
-      window.removeEventListener("touchend", handleTouchEnd);
-    };
-  }, [lightboxOpen, nextImage, prevImage]);
+  };
 
   return (
     <section id="gallery">
@@ -124,16 +81,13 @@ const Galery = () => {
         <div className="fixed inset-0 bg-black bg-opacity-90 flex justify-center items-center z-50">
           <div className={`transition-opacity duration-200 ${fade ? "opacity-0" : "opacity-100"}`}>
             <img
-              src={filteredImages[currentIndex].path}
-              alt={filteredImages[currentIndex].alt}
+              src={filteredImages[currentIndex]?.path}
+              alt={filteredImages[currentIndex]?.alt}
               className="max-w-[90vw] max-h-[90vh] object-contain"
             />
           </div>
 
-          <button
-            className="absolute top-4 right-4 text-white text-4xl"
-            onClick={closeLightbox}
-          >
+          <button className="absolute top-4 right-4 text-white text-4xl" onClick={closeLightbox}>
             &times;
           </button>
 
