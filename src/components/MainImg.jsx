@@ -8,6 +8,7 @@ const MainImg = () => {
                 alt="Bullet Art" 
                 className="w-[90%] max-w-[1000px] mx-auto m-24"
             />
+            
         </div>
     );
 };
