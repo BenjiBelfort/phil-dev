@@ -11,7 +11,7 @@ const categoryDescriptions = {
   "bullet-art": {
     longTitle: "Bullet Art",
     longText:
-      "Bullet Art – Ceci est la description complète et détaillée de la catégorie Bullet Art, qui explique l’univers et les inspirations derrière ces œuvres. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt mollitia quae saepe, nostrum error quisquam impedit nisi maxime excepturi architecto harum repudiandae iste numquam facilis doloribus reprehenderit fugiat. Ipsum, explicabo? Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit."
+      "Le Bullet Art, est une fusion audacieuse entre la pop culture et une approche graphique résolument originale. Des douilles de 9 mm comme matière première, que je transforme en œuvres d'art saisissantes. En les alignant avec précision, comme un sniper, je donne vie à des personnages iconiques de la pop. Chaque pièce devient un hommage vibrant à ces figures qui ont marqué notre imaginaire collectif. Mais votre créativité ne s'arrête pas là. Vous réinventez également des cibles, supports traditionnellement associés à la pratique du tir, en y peignant des éléments emblématiques de la pop culture. Ce mélange entre l'univers graphique de la rue et l'esthétique pop crée un contraste puissant, interrogeant les frontières entre l'art, la culture et les objets du quotidien. Votre travail, à la fois graphique et conceptuel, capte l'essence de la pop culture tout en lui insufflant une dimension nouvelle. Les douilles de 9 mm, symboles de puissance et de précision, deviennent entre vos mains des outils d'expression artistique, rappelant que l'art peut surgir des endroits les plus inattendus. Le Bullet Art, c'est bien plus qu'un style : c'est une déclaration, une réinterprétation audacieuse de notre héritage culturel. Le Bullet Art : c'est de la balle !"
       
   },
   mondrian: {
@@ -148,7 +148,7 @@ const Galery = () => {
   return (
     <section id="gallery">
       <div className="container mx-auto px-4 py-10">
-        <h3 className="uppercase text-white text-3xl text-center my-12">Galerie</h3>
+        <h3 className="uppercase font-primary text-white text-7xl text-center my-12">Galerie</h3>
         
         {/* Boutons de filtres : ils sont disposés en grille pour avoir 2 colonnes en mobile et 4 en desktop */}
         <div className="grid grid-cols-2 md:grid-cols-4 md:gap-10 gap-4 mb-6">
@@ -156,7 +156,7 @@ const Galery = () => {
             <button
               key={cat}
               onClick={() => handleClick(cat)}
-              className={`relative w-full px-4 py-2 rounded-lg font-medium transition cursor-custom ${
+              className={`relative w-full px-4 py-2 rounded-lg font-secondary md:text-xl font-medium transition cursor-custom ${
                 filter === cat ? "text-black bg-slate-400" : "text-white bg-slate-700 hover:bg-slate-600"
               }`}
             >
@@ -186,7 +186,7 @@ const Galery = () => {
                 // Card de description dans la grille
                 <div className="w-full h-full bg-white text-black relative p-3 pb-10 md:p-6 flex flex-col">
                     {/* Titre en gras et majuscules */}
-                    <div className="font-bold uppercase">{item.longTitle}</div>
+                    <div className="font-secondary md:text-xl uppercase">{item.longTitle}</div>
 
                     {/* Conteneur du texte avec gestion de l'overflow */}
                     <div className="relative flex-1 mt-1 text-xs md:text-base overflow-hidden min-h-[4rem] ">
@@ -197,7 +197,7 @@ const Galery = () => {
                     </div>
 
                     {/* Bouton "Lire la suite" toujours visible sur fond blanc */}
-                    <span className="absolute bottom-3 right-3 text-blue-600 text-xs cursor-pointer z-10 px-1">
+                    <span className="absolute bottom-3 right-3 text-blue-600 text-xs cursor-pointer z-10 px-1 font-bold">
                         lire la suite...
                     </span>
                 </div>
@@ -215,13 +215,13 @@ const Galery = () => {
 
       {/* Lightbox */}
       {lightboxOpen && (
-        <div className="fixed inset-0 bg-black/90 flex justify-center items-center z-50">
+        <div className="fixed inset-0 bg-black flex justify-center items-center z-50">
           <div className={`transition-opacity duration-200 ${fade ? "opacity-0" : "opacity-100"}`}>
             {filteredImages[currentIndex].type === "desc" ? (
               // Grande card descriptive avec défilement vertical si nécessaire
-              <div className="max-w-[80vw] md:max-w-[50vw] max-h-[85vh] bg-white text-black p-8 rounded-lg overflow-auto">
-                <div className="font-bold text-xl">{filteredImages[currentIndex].longTitle}</div>
-                <div className="mt-4">{filteredImages[currentIndex].longText}</div>
+              <div className="max-w-[80vw] md:max-w-[50vw] max-h-[80vh] bg-white text-black p-6 md:p-10 rounded-lg overflow-auto">
+                <div className="font-secondary text-2xl md:text-3xl uppercase">{filteredImages[currentIndex].longTitle}</div>
+                <div className="mt-4 md:text-xl">{filteredImages[currentIndex].longText}</div>
               </div>
             ) : (
               <img
@@ -232,19 +232,19 @@ const Galery = () => {
             )}
           </div>
           <button
-            className="absolute top-4 right-4 md:right-20 xl:right-40 text-white text-4xl cursor-pointer"
+            className="absolute top-4 right-4 md:right-20 xl:right-35 text-white text-4xl md:text-7xl cursor-pointer"
             onClick={closeLightbox}
           >
             &times;
           </button>
           <button
-            className="absolute left-4 md:left-20 xl:left-40 text-white text-4xl md:text-7xl cursor-pointer filter drop-shadow-xl"
+            className="absolute left-4 md:left-20 xl:left-35 text-white text-4xl md:text-7xl cursor-pointer filter drop-shadow-xl"
             onClick={prevImage}
           >
             &#8249;
           </button>
           <button
-            className="absolute right-4 md:right-20 xl:right-40 text-white text-4xl md:text-7xl cursor-pointer filter drop-shadow-xl"
+            className="absolute right-4 md:right-20 xl:right-35 text-white text-4xl md:text-7xl cursor-pointer filter drop-shadow-xl"
             onClick={nextImage}
           >
             &#8250;
