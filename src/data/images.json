@@ -1,16 +1,31 @@
 [
     { "id": 101, "path": "/bullet_art/bullet_homer.webp", "alt":"alt de l'image", "category": "bullet-art" },
     { "id": 102, "path": "/bullet_art/bullet_buzz.webp", "alt":"alt de l'image", "category": "bullet-art" },
-    { "id": 102, "path": "/bullet_art/bang.webp", "alt":"alt de l'image", "category": "bullet-art" },
+    { "id": 103, "path": "/bullet_art/bang.webp", "alt":"alt de l'image", "category": "bullet-art" },
+    { "id": 104, "path": "/bullet_art/cible1.webp", "alt":"alt de l'image", "category": "bullet-art" },
+    { "id": 105, "path": "/bullet_art/cible1-frame.webp", "alt":"alt de l'image", "category": "bullet-art" },
+    { "id": 106, "path": "/bullet_art/cible2.webp", "alt":"alt de l'image", "category": "bullet-art" },
+    { "id": 107, "path": "/bullet_art/bullet-gros-minet.webp", "alt":"alt de l'image", "category": "bullet-art" },
+    { "id": 108, "path": "/bullet_art/bullet-duck.webp", "alt":"alt de l'image", "category": "bullet-art" },
+    { "id": 109, "path": "/bullet_art/bullet_president2.webp", "alt":"alt de l'image", "category": "bullet-art" },
+    { "id": 110, "path": "/bullet_art/bullet_president3.webp", "alt":"alt de l'image", "category": "bullet-art" },
+    { "id": 111, "path": "/bullet_art/bullet_president1.webp", "alt":"alt de l'image", "category": "bullet-art" },
 
 
     { "id": 201, "path": "/mondrian/mondrian1.webp", "alt":"alt de l'image", "category": "mondrian" },
     { "id": 202, "path": "/mondrian/mondrian-simpson.webp", "alt":"alt de l'image", "category": "mondrian" },
+    { "id": 203, "path": "/mondrian/mondrian2.webp", "alt":"alt de l'image", "category": "mondrian" },
+    { "id": 204, "path": "/mondrian/mondrian-jeux-video.webp", "alt":"alt de l'image", "category": "mondrian" },
+    { "id": 205, "path": "/mondrian/mondrian-manga.webp", "alt":"alt de l'image", "category": "mondrian" },
 
 
 
     { "id": 301, "path": "/autre/lego.webp", "alt":"alt de l'image", "category": "autres" },
     { "id": 302, "path": "/autre/france.webp", "alt":"alt de l'image", "category": "autres" },
     { "id": 303, "path": "/autre/Blue_one.webp", "alt":"alt de l'image", "category": "autres" },
-    { "id": 304, "path": "/autre/graph.webp", "alt":"alt de l'image", "category": "autres" }
+    { "id": 304, "path": "/autre/graph.webp", "alt":"alt de l'image", "category": "autres" },
+    { "id": 305, "path": "/autre/batman.webp", "alt":"alt de l'image", "category": "autres" },
+    { "id": 306, "path": "/autre/no_war.webp", "alt":"alt de l'image", "category": "autres" },
+    { "id": 307, "path": "/autre/Dragon_ball.webp", "alt":"alt de l'image", "category": "autres" },
+    { "id": 308, "path": "/autre/I_love_Gaza.webp", "alt":"alt de l'image", "category": "autres" }
   ]

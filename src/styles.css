@@ -5,11 +5,14 @@
     --font-primary: "Agdasima", serif;
 }
 
-
 html {
     scroll-behavior: smooth;
 }
   
 body {
     overflow-x: hidden;
+}
+
+.cursor-custom {
+    cursor: url('/target.png') 16 16, crosshair;
 }
