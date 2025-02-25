@@ -125,7 +125,7 @@ const Galery = () => {
         <h3 className="uppercase text-white text-3xl text-center my-12">Galerie</h3>
         
         {/* Conteneur des boutons avec la même grille que la galerie d'images */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
+        <div className="grid grid-cols-2 md:grid-cols-4 md:gap-10 gap-4 mb-6">
           {["all", "bullet-art", "mondrian", "autres"].map((cat) => (
             <button
               key={cat}
@@ -148,7 +148,7 @@ const Galery = () => {
         </div>
 
         {/* Galerie d'images */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div className="grid grid-cols-2 md:grid-cols-4 md:gap-10 gap-4">
           {filteredImages.map((image, index) => (
             <div
               key={image.id}
@@ -167,28 +167,28 @@ const Galery = () => {
 
       {/* Lightbox */}
       {lightboxOpen && (
-        <div className="fixed inset-0 bg-black bg-opacity-90 flex justify-center items-center z-50">
+        <div className="fixed inset-0 bg-black/90 flex justify-center items-center z-50">
           <div className={`transition-opacity duration-200 ${fade ? "opacity-0" : "opacity-100"}`}>
             <img
               src={filteredImages[currentIndex].path}
               alt={filteredImages[currentIndex].alt}
-              className="max-w-[90vw] max-h-[90vh] object-contain"
+              className="max-w-[90vw] max-h-[90vh] object-contain rounded-lg"
             />
           </div>
           <button
-            className="absolute top-4 right-4 text-white text-4xl drop-shadow-lg"
+            className="absolute top-4 right-4 md:right-20 text-white text-4xl cursor-pointer"
             onClick={closeLightbox}
           >
             &times;
           </button>
           <button
-            className="absolute left-4 text-white text-4xl drop-shadow-lg"
+            className="absolute left-4 md:left-20 xl:left-40 text-white text-4xl md:text-7xl cursor-pointer filter drop-shadow-xl"
             onClick={prevImage}
           >
             &#8249;
           </button>
           <button
-            className="absolute right-4 text-white text-4xl drop-shadow-lg"
+            className="absolute right-4 md:right-20 xl:right-40 text-white text-4xl md:text-7xl cursor-pointer filter drop-shadow-xl"
             onClick={nextImage}
           >
             &#8250;
