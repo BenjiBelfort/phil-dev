@@ -6,13 +6,13 @@ import Galery from "./components/Galery";
 
 const App = () => {
   return (
-    <div className="bg-gray-900">
+    <div className="bg-slate-900">
       <Navbar />
       <MainImg />
       {/* <Hero /> */}
       <Galery />
-      <section id="agenda" className="h-screen bg-gray-700 text-white flex items-center justify-center text-3xl">Agenda</section>
-      <section id="contact" className="h-screen bg-gray-600 text-white flex items-center justify-center text-3xl">Contact</section>
+      <section id="agenda" className="uppercase font-primary h-screen bg-slate-900 text-white text-7xl flex items-center justify-center">Agenda</section>
+      <section id="contact" className="uppercase font-primary h-screen bg-gradient-to-b from-slate-900 to-slate-950 text-white text-7xl flex items-center justify-center">Contact</section>
       <Footer />
     </div>
   );
