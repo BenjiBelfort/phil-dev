@@ -207,7 +207,7 @@ const Galery = () => {
   return (
     <section id="gallery">
       <div className="container mx-auto px-4 py-10">
-        <h3 className="uppercase font-primary text-white text-7xl text-center my-12">Galerie</h3>
+        <h3 className="uppercase font-primary text-white text-5xl md:text-7xl text-center my-12">Galerie</h3>
         
         {/* Boutons de filtres */}
         <div className="grid grid-cols-2 lg:grid-cols-4 md:gap-10 gap-4 mb-6 md:mb-8">
