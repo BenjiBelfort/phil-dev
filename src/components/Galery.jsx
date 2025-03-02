@@ -6,19 +6,12 @@ const stains = [
   "/taches/tache2.png",
   "/taches/tache3.png"
 ];
-// à tester si besoin de mise en forme du texte
-// longText: (
-//   <>
-//     <p>
-//       Le <strong>Bullet Art</strong>, est une fusion audacieuse entre la pop culture et une approche graphique résolument originale.
-//     </p>
-//     <p>
-//       <span style={{ color: "red" }}>Des douilles de 9 mm</span> comme matière première, que je transforme en œuvres d'art saisissantes.
-//     </p>
-//     <p>
-//       <em>Le Bullet Art : c'est de la balle !</em>
-//     </p>
-//   </>
+
+const statusColors = {
+  "en cours": "bg-orange-500",
+  "dispo": "bg-green-500",
+  "réservée": "bg-red-500",
+};
 
 const categoryDescriptions = {
   "bullet art": {
@@ -69,6 +62,7 @@ const categoryDescriptions = {
   }
 };
 
+
 const Galery = () => {
   const [filter, setFilter] = useState("all");
   const [randomAllImages, setRandomAllImages] = useState([]);
@@ -108,7 +102,7 @@ const Galery = () => {
         type: "desc",
         category: filter,
         longTitle: categoryDescriptions[filter]?.longTitle,
-        longText: categoryDescriptions[filter]?.longText
+        longText: categoryDescriptions[filter]?.longText,
       };
       return [descObj, ...imagesForCat];
     }
@@ -161,33 +155,26 @@ const Galery = () => {
     return () => window.removeEventListener("keydown", handleKeyDown);
   }, [lightboxOpen, nextImage, prevImage]);
 
-  // gestion du tactile
   useEffect(() => {
     if (!lightboxOpen) return;
-  
     let touchStartX = 0;
-    let isZooming = false; // Variable pour suivre le zoom
-  
+    let isZooming = false;
     const handleTouchStart = (e) => {
       if (e.touches.length > 1) {
-        isZooming = true; // L'utilisateur est en train de zoomer
+        isZooming = true;
       } else {
         isZooming = false;
         touchStartX = e.touches[0].clientX;
       }
     };
-  
     const handleTouchEnd = (e) => {
-      if (isZooming) return; // Si on zoom, on bloque le slide
-  
+      if (isZooming) return;
       const touchEndX = e.changedTouches[0].clientX;
       if (touchStartX - touchEndX > 50) nextImage();
       if (touchEndX - touchStartX > 50) prevImage();
     };
-  
     window.addEventListener("touchstart", handleTouchStart);
     window.addEventListener("touchend", handleTouchEnd);
-  
     return () => {
       window.removeEventListener("touchstart", handleTouchStart);
       window.removeEventListener("touchend", handleTouchEnd);
@@ -200,7 +187,7 @@ const Galery = () => {
     setFilter(cat);
     setStain({
       src: stains[Math.floor(Math.random() * stains.length)],
-      rotation: Math.random() * 360
+      rotation: Math.random() * 360,
     });
   };
 
@@ -216,11 +203,10 @@ const Galery = () => {
               key={cat}
               onClick={() => handleClick(cat)}
               className={`relative w-full px-4 py-2 rounded-lg font-secondary md:text-xl font-medium transition cursor-custom ${
-                filter === cat ? "text-black bg-slate-400" : "text-white bg-slate-700 hover:bg-slate-600"
+                filter === cat ? "text-black bg-slate-400 transition-transform duration-300 ease-in-out hover:scale-110" : "text-white bg-slate-700 hover:bg-slate-600 transition-transform duration-300 ease-in-out hover:scale-110"
               }`}
             >
               {cat === "all" ? "TOUS" : cat.toUpperCase()}
-              {/* Affichage de la tache dans le bouton actif */}
               {filter === cat && stain && (
                 <img
                   src={stain.src}
@@ -233,43 +219,50 @@ const Galery = () => {
           ))}
         </div>
 
-        {/* Galerie d'images (les cellules restent carrées) */}
+        {/* Galerie d'images */}
         <div className="grid grid-cols-2 lg:grid-cols-4 md:gap-10 gap-4">
         {filteredImages.map((item, index) => (
-            <div
-                key={item.id}
-                className="cursor-pointer overflow-hidden rounded-lg shadow-lg aspect-square flex items-center justify-center"
-                onClick={() => openLightbox(index)}
-            >
-                {item.type === "desc" ? (
-                // Card de description dans la grille
-                <div className="w-full h-full bg-white text-black relative p-2 pb-10 md:p-4 flex flex-col">
-                    {/* Titre en gras et majuscules */}
-                    <div className="font-secondary md:text-xl uppercase">{item.longTitle}</div>
-
-                    {/* Conteneur du texte avec gestion de l'overflow */}
-                    <div className="relative flex-1 text-xs md:text-base overflow-hidden min-h-[4rem] ">
-                        <div>{item.longText}</div>
-
-                        {/* Dégradé ajusté pour couvrir uniquement la zone coupée */}
-                        <div className="absolute bottom-0 left-0 w-full h-[100px] bg-gradient-to-t from-white via-white/80 to-transparent pointer-events-none z-0"></div>
-                    </div>
-
-                    {/* Bouton "Lire la suite" toujours visible sur fond blanc */}
-                    <span className="absolute bottom-3 right-3 text-blue-600 text-xs cursor-pointer z-10 px-1 font-bold">
-                        lire la suite...
-                    </span>
+          <div
+            key={item.id}
+            className="cursor-pointer overflow-hidden rounded-lg shadow-lg aspect-square flex items-center justify-center transition-transform duration-300 ease-in-out hover:scale-110"
+            onClick={() => openLightbox(index)}
+          >
+            {item.type === "desc" ? (
+              // Card de description dans la grille
+              <div className="w-full h-full bg-white text-black relative p-3 pb-10 md:p-4 flex flex-col">
+                <div className="font-secondary md:text-xl uppercase">{item.longTitle}</div>
+                <div className="relative flex-1 mt-1 text-xs md:text-base overflow-hidden min-h-[4rem]">
+                  <div>{item.longText}</div>
+                  <div className="absolute bottom-0 left-0 w-full h-[100px] bg-gradient-to-t from-white via-white/80 to-transparent pointer-events-none z-0"></div>
                 </div>
-                ) : (
+                <span className="absolute bottom-3 right-3 text-blue-600 text-xs cursor-pointer z-10 px-1 font-bold">
+                  lire la suite...
+                </span>
+              </div>
+            ) : (
+              // Image avec bandeau de statut
+              <div className="relative w-full h-full">
                 <img
-                    src={item.path}
-                    alt={item.alt}
-                    className="w-full h-full object-cover rounded-lg"
+                  src={item.path}
+                  alt={item.alt}
+                  className="w-full h-full object-cover rounded-lg"
                 />
+                {item.status && (
+                  <div
+                    className={`absolute top-16 left-[-23px] transform -rotate-45 origin-top-left text-center text-white text-xs font-bold px-2 py-1 nav-link ${
+                      statusColors[item.status.toLowerCase()] || "bg-gray-500"
+                    }`}
+                    style={{ width: "120px" }}
+                  >
+                    {item.status.toUpperCase()}
+                  </div>
                 )}
-            </div>
-            ))}
-        </div>
+              </div>
+            )}
+          </div>
+        ))}
+      </div>
+
       </div>
 
       {/* Lightbox */}
@@ -277,21 +270,38 @@ const Galery = () => {
         <div className="fixed inset-0 bg-black flex justify-center items-center z-50">
           <div className={`transition-opacity duration-200 ${fade ? "opacity-0" : "opacity-100"}`}>
             {filteredImages[currentIndex].type === "desc" ? (
-              // Grande card descriptive avec défilement vertical si nécessaire
+              // Grande card descriptive pour les descriptions
               <div className="max-w-[80vw] md:max-w-[50vw] max-h-[80vh] bg-white text-black p-6 md:p-10 rounded-lg overflow-auto">
-                <div className="font-secondary text-2xl md:text-3xl uppercase">{filteredImages[currentIndex].longTitle}</div>
-                <div className="mt-3 md:mt-4 md:text-xl">{filteredImages[currentIndex].longText}</div>
+                <div className="font-secondary text-2xl md:text-3xl uppercase">
+                  {filteredImages[currentIndex].longTitle}
+                </div>
+                <div className="mt-3 md:mt-4 md:text-xl">
+                  {filteredImages[currentIndex].longText}
+                </div>
               </div>
             ) : (
-              <img
-                src={filteredImages[currentIndex].path}
-                alt={filteredImages[currentIndex].alt}
-                className="max-w-[90vw] max-h-[90vh] object-contain rounded-lg"
-              />
+              // Affichage de l'image avec bandeau de statut dans la lightbox
+              <div className="relative inline-block overflow-hidden rounded-lg">
+                <img
+                  src={filteredImages[currentIndex].path}
+                  alt={filteredImages[currentIndex].alt}
+                  className="max-w-[90vw] max-h-[90vh] object-contain rounded-lg"
+                />
+                {filteredImages[currentIndex].status && (
+                  <div
+                    className={`absolute top-25 left-[-40px] transform -rotate-45 origin-top-left text-center text-white font-bold px-2 py-1 logo-shadow ${
+                      statusColors[filteredImages[currentIndex].status.toLowerCase()] || "bg-gray-500"
+                    }`}
+                    style={{ width: "200px" }}
+                  >
+                    {filteredImages[currentIndex].status.toUpperCase()}
+                  </div>
+                )}
+              </div>
             )}
           </div>
           <button
-            className="absolute top-4 right-4 md:right-20 xl:right-35 text-white text-4xl md:text-7xl cursor-pointer"
+            className="absolute top-4 right-4 md:right-20 xl:right-35 text-white text-4xl cursor-pointer"
             onClick={closeLightbox}
           >
             &times;

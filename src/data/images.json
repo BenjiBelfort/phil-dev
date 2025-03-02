@@ -1,7 +1,7 @@
 [
-    { "id": 101, "path": "/bullet_art/bullet_homer.webp", "alt":"alt de l'image", "category": "bullet art" },
-    { "id": 102, "path": "/bullet_art/bullet_buzz.webp", "alt":"alt de l'image", "category": "bullet art" },
-    { "id": 103, "path": "/bullet_art/bang.webp", "alt":"alt de l'image", "category": "bullet art" },
+    { "id": 101, "path": "/bullet_art/bullet_homer.webp", "alt":"alt de l'image", "category": "bullet art", "status":"en cours" },
+    { "id": 102, "path": "/bullet_art/bullet_buzz.webp", "alt":"alt de l'image", "category": "bullet art", "status":"dispo" },
+    { "id": 103, "path": "/bullet_art/bang.webp", "alt":"alt de l'image", "category": "bullet art", "status":"réservée" },
     { "id": 104, "path": "/bullet_art/cible1.webp", "alt":"alt de l'image", "category": "bullet art" },
     { "id": 105, "path": "/bullet_art/cible1-frame.webp", "alt":"alt de l'image", "category": "bullet art" },
     { "id": 106, "path": "/bullet_art/cible2.webp", "alt":"alt de l'image", "category": "bullet art" },

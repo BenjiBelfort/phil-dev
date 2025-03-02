@@ -57,7 +57,7 @@ const Navbar = () => {
             <img
               src="/phil-logo-white.png"
               alt="Logo de l'artiste"
-              className={`transition-all duration-400 ${
+              className={`transition-all duration-400 hover:scale-110 ${
                 isScrolled
                   ? "h-12 md:h-12 translate-y-0"
                   : "h-24 lg:h-48 translate-y-8 lg:translate-y-20 logo-shadow"
@@ -124,9 +124,7 @@ const Navbar = () => {
             <li>
               <a
                 href="#gallery"
-                className="font-secondary block text-lg hover:text-gray-400 transition-transform duration-400 ease-in"
-                onClick={() => setIsOpen(false)}
-              >
+                className={`font-secondary block text-lg hover:text-gray-400 transition-transform duration-400 ease-in ${isOpen ? "translate-x-0" : "translate-x-full"}`} onClick={() => setIsOpen(false)}>
                 Galerie
               </a>
             </li>
@@ -142,9 +140,7 @@ const Navbar = () => {
             <li>
               <a
                 href="#contact"
-                className="font-secondary block text-lg hover:text-gray-400 transition-transform duration-600 ease-in"
-                onClick={() => setIsOpen(false)}
-              >
+                className={`font-secondary block text-lg hover:text-gray-400 transition-transform duration-500 ease-in ${isOpen ? "translate-x-0" : "translate-x-full"}`} onClick={() => setIsOpen(false)}>
                 Contact
               </a>
             </li>
