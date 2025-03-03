@@ -9,3 +9,5 @@ Currently, two official plugins are available:
 
 
 couleurs Slate
+
+    { "id": 308, "path": "/autre/I_love_Gaza.webp", "alt":"Goldorak faisant un selfie devant les ruines de Gaza", "category": "autres" },

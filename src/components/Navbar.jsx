@@ -57,7 +57,7 @@ const Navbar = () => {
             <img
               src="/phil-logo-white.png"
               alt="Logo de l'artiste"
-              className={`transition-all duration-400 hover:scale-110 ${
+              className={`transition-all duration-400 z-200 hover:scale-110 ${
                 isScrolled
                   ? "h-12 md:h-12 translate-y-0"
                   : "h-24 lg:h-48 translate-y-8 lg:translate-y-20 logo-shadow"

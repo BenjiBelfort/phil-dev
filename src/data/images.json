@@ -1,5 +1,5 @@
 [
-    { "id": 101, "path": "/bullet_art/bullet_homer.webp", "alt":"alt de l'image", "category": "bullet art", "status":"en cours" },
+    { "id": 101, "path": "/bullet_art/bullet_homer.webp", "alt":"alt de l'image", "category": "bullet art", "status":"en cours", "description":"toille 50 x 80 cm - 250 étuis" },
     { "id": 102, "path": "/bullet_art/bullet_buzz.webp", "alt":"alt de l'image", "category": "bullet art", "status":"dispo" },
     { "id": 103, "path": "/bullet_art/bang.webp", "alt":"alt de l'image", "category": "bullet art", "status":"réservée" },
     { "id": 104, "path": "/bullet_art/cible1.webp", "alt":"alt de l'image", "category": "bullet art" },
@@ -34,5 +34,17 @@
     { "id": 305, "path": "/autre/batman.webp", "alt":"alt de l'image", "category": "autres" },
     { "id": 306, "path": "/autre/no_war.webp", "alt":"alt de l'image", "category": "autres" },
     { "id": 307, "path": "/autre/Dragon_ball.webp", "alt":"alt de l'image", "category": "autres" },
-    { "id": 308, "path": "/autre/I_love_Gaza.webp", "alt":"alt de l'image", "category": "autres" }
+    { "id": 309, "path": "/autre/vm-automobiles.webp", "alt":"super héros dans une décapotable noire", "category": "autres" },
+    { "id": 310, "path": "/autre/dog-graph.webp", "alt":"bouledogue graffiti", "category": "autres" },
+    { "id": 311, "path": "/autre/wonder-woman.webp", "alt":"Wonder Woman is a big slut", "category": "autres" },
+    { "id": 312, "path": "/autre/wonder-woman-situation.webp", "alt":"Tableau de Wonder Woman en situation", "category": "autres" },
+    { "id": 313, "path": "/autre/pea.webp", "alt":"Graffiti PEA", "category": "autres" },
+    { "id": 314, "path": "/autre/pea-situation.webp", "alt":"Graffiti PEA en situation", "category": "autres" },
+    { "id": 315, "path": "/autre/timbre-wonder-woman.webp", "alt":"Timbre géant Wonder Woman", "category": "autres", "description":"Toille 100 x 50 cm - peinture acrylique" },
+    { "id": 316, "path": "/autre/butt-poker.webp", "alt":"Graffeuse et jeux de carte", "category": "autres" },
+    { "id": 317, "path": "/autre/donkey-kong-vs-mario.webp", "alt":"Donkey kong version Orlinski contre super mario gillet jaune", "category": "autres" },
+    { "id": 318, "path": "/autre/disney-chanel-situation.webp", "alt":"Bouteille du parfum Disney CHANEL", "category": "autres" },
+    { "id": 319, "path": "/autre/disney-chanel.webp", "alt":"Bouteille du parfum Disney CHANEL en situation", "category": "autres" },
+    { "id": 320, "path": "/autre/aquaman.webp", "alt":"Aquaman I hate breaded fish !", "category": "autres" },
+    { "id": 321, "path": "/autre/wonder-woman-warhol.webp", "alt":"Wonder Woman style Warhol ", "category": "autres" }
   ]

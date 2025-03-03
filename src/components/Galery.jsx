@@ -249,14 +249,18 @@ const Galery = () => {
                 />
                 {item.status && (
                   <div
-                    className={`absolute top-16 left-[-23px] transform -rotate-45 origin-top-left text-center text-white text-xs font-bold px-2 py-1 nav-link ${
+                    className={`absolute top-16 left-[-23px] transform -rotate-45 origin-top-left text-center text-white text-xs font-bold px-2 py-1 logo-shadow ${
                       statusColors[item.status.toLowerCase()] || "bg-gray-500"
                     }`}
                     style={{ width: "120px" }}
                   >
                     {item.status.toUpperCase()}
                   </div>
+                  
                 )}
+                {/* <span className="absolute bottom-3 right-3 text-blue-600 text-xs cursor-pointer z-10 px-1 font-bold">
+                  voir les détails
+                </span> */}
               </div>
             )}
           </div>
@@ -297,6 +301,13 @@ const Galery = () => {
                     {filteredImages[currentIndex].status.toUpperCase()}
                   </div>
                 )}
+
+                {/* Bandeau de description en bas */}
+                  {filteredImages[currentIndex].description && (
+                    <div className="absolute bottom-0 left-0 w-full bg-white/70 text-black text-center text-xs p-2">
+                      {filteredImages[currentIndex].description}
+                    </div>
+                  )}
               </div>
             )}
           </div>
