@@ -48,7 +48,36 @@ const Navbar = () => {
     >
       <div className="container mx-auto flex justify-between items-center h-full">
         {/* Logo cliquable */}
-        <div
+          <div
+            className="relative inline-flex items-center gap-5"
+            onClick={() => {
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            }}
+          >
+            <img
+              src="/phil-logo-white.png"
+              alt="Logo de l'artiste"
+              className={`transition-all duration-400 z-200 hover:scale-110 cursor-custom ${
+                isScrolled
+                  ? "h-12 md:h-12 translate-y-0"
+                  : "h-24 lg:h-48 translate-y-8 lg:translate-y-20 logo-shadow"
+              }`}
+            />
+            {/* Texte "Bullet Artiste" affiché seulement en haut de la page */}
+            <h1
+              className={`absolute bottom-[-180px] lg:bottom-[-470px] left-0 text-white text-4xl lg:text-8xl font-secondary leading-tight text-drop-shadow uppercase transition-all duration-500 origin-top-left ${
+                isScrolled
+                  ? "opacity-0 translate-y-[-40px] scale-0 invisible"
+                  : "scale-100 opacity-100 translate-y-0 visible"
+              }`}
+            >
+              Bullet <br /> Target <br /> Artiste
+            </h1>
+
+          </div>
+
+
+        {/* <div
             className="inline-flex items-center gap-5 cursor-pointer"
             onClick={() => {
               window.scrollTo({ top: 0, behavior: "smooth" });
@@ -63,7 +92,7 @@ const Navbar = () => {
                   : "h-24 lg:h-48 translate-y-8 lg:translate-y-20 logo-shadow"
               }`}
             />
-          </div>
+          </div> */}
 
         {/* MENU EN VERSION GRAND ÉCRAN */}
         <ul className="hidden md:flex space-x-8 uppercase">

@@ -37,7 +37,7 @@ const categoryDescriptions = {
     longText: (
       <>
         <p>
-          Piet Mondrian, dont le nom évoque immédiatement le cubisme contemporain, est une source d’inspiration majeure pour moi. J’admire son travail et l’idée d’intégrer des personnages ou d’autres éléments au sein de ses célèbres carrés me fascine...
+          Piet Mondrian, dont le nom évoque immédiatement un style contemporain dénommé l’abstraction dont il fut l’un des pionniers, est une source d’inspiration majeure pour moi. J’admire son travail et l’idée d’intégrer des personnages ou d’autres éléments au sein de ses célèbres carrés me fascine...
         </p>
         <br />
         <p>
@@ -312,19 +312,19 @@ const Galery = () => {
             )}
           </div>
           <button
-            className="absolute top-4 right-4 md:right-20 xl:right-35 text-white text-4xl cursor-pointer"
+            className="absolute top-4 right-4 md:right-20 xl:right-35 text-white text-4xl cursor-pointer hover:scale-110"
             onClick={closeLightbox}
           >
             &times;
           </button>
           <button
-            className="absolute left-4 md:left-20 xl:left-35 text-white text-4xl md:text-7xl cursor-pointer filter drop-shadow-xl"
+            className="absolute left-4 md:left-20 xl:left-35 text-white text-4xl md:text-7xl cursor-pointer filter nav-shadow hover:scale-110"
             onClick={prevImage}
           >
             &#8249;
           </button>
           <button
-            className="absolute right-4 md:right-20 xl:right-35 text-white text-4xl md:text-7xl cursor-pointer filter drop-shadow-xl"
+            className="absolute right-4 md:right-20 xl:right-35 text-white text-4xl md:text-7xl cursor-pointer filter nav-shadow hover:scale-110"
             onClick={nextImage}
           >
             &#8250;
