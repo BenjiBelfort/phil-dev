@@ -304,7 +304,7 @@ const Galery = () => {
 
                 {/* Bandeau de description en bas */}
                   {filteredImages[currentIndex].description && (
-                    <div className="absolute bottom-0 left-0 w-full bg-white/70 text-black text-center text-xs p-2">
+                    <div className="absolute bottom-0 left-0 w-full bg-white/80 text-black text-right text-xs p-2">
                       {filteredImages[currentIndex].description}
                     </div>
                   )}

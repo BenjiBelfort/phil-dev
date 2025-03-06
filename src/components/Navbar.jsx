@@ -43,7 +43,7 @@ const Navbar = () => {
   return (
     <nav
       className={`fixed w-full top-0 z-50 px-6 h-20 transition-colors duration-300 ${
-        isScrolled ? "bg-black navbar-scrolled" : "bg-transparent"
+        isScrolled ? "bg-black/85 navbar-scrolled" : "bg-transparent"
       } text-white`}
     >
       <div className="container mx-auto flex justify-between items-center h-full">
@@ -65,7 +65,7 @@ const Navbar = () => {
             />
             {/* Texte "Bullet Artiste" affiché seulement en haut de la page */}
             <h1
-              className={`absolute bottom-[-180px] lg:bottom-[-470px] left-0 text-white text-4xl lg:text-8xl font-secondary leading-tight text-drop-shadow uppercase transition-all duration-500 origin-top-left ${
+              className={`absolute bottom-[-180px] lg:bottom-[-470px] left-0 text-white text-4xl lg:text-8xl font-secondary leading-tight text-drop-shadow uppercase transition-all duration-400 origin-top-left ${
                 isScrolled
                   ? "opacity-0 translate-y-[-40px] scale-0 invisible"
                   : "scale-100 opacity-100 translate-y-0 visible"
