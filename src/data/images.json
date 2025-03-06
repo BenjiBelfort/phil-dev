@@ -1,147 +1,235 @@
 [
   {
     "id": 101,
-    "path": "/bullet_art/bullet_homer.webp",
-    "alt": "alt de l'image",
+    "path": "/bullet_art/homer-run.webp",
+    "alt": "Homer Simpsons run",
     "category": "bullet art",
-    "status": "en cours",
-    "description": "toille 50 x 80 cm - 250 étuis"
+    "status": "",
+    "description": ""
   },
   {
     "id": 102,
-    "path": "/bullet_art/bullet_buzz.webp",
-    "alt": "alt de l'image",
+    "path": "/bullet_art/popeye.webp",
+    "alt": "Popeye",
     "category": "bullet art",
     "status": "dispo",
     "description": ""
   },
   {
     "id": 103,
-    "path": "/bullet_art/bang.webp",
-    "alt": "Bang avec réplique d'arme",
+    "path": "/bullet_art/gros-minet.webp",
+    "alt": "Gros Minet",
     "category": "bullet art",
-    "status": "réservée",
-    "description": "BANG! - bois et réplique - 80 x 40"
+    "status": "",
+    "description": ""
   },
   {
     "id": 104,
-    "path": "/bullet_art/cible1.webp",
-    "alt": "alt de l'image",
+    "path": "/bullet_art/joe-dalton.webp",
+    "alt": "Joe Dalton",
     "category": "bullet art",
     "status": "",
     "description": ""
   },
   {
     "id": 105,
-    "path": "/bullet_art/cible1-frame.webp",
-    "alt": "alt de l'image",
+    "path": "/bullet_art/daffy-duck.webp",
+    "alt": "Daffy Duck",
     "category": "bullet art",
     "status": "",
-    "description": ""
+    "description": "Daffy Duck - bois et laiton - 80 x 60 cm"
   },
   {
     "id": 106,
-    "path": "/bullet_art/cible2.webp",
-    "alt": "alt de l'image",
+    "path": "/bullet_art/saint-valentin.webp",
+    "alt": "Saint Valentin",
     "category": "bullet art",
     "status": "",
     "description": ""
   },
   {
     "id": 107,
-    "path": "/bullet_art/bullet-gros-minet.webp",
-    "alt": "alt de l'image",
+    "path": "/bullet_art/abraham-lincoln.webp",
+    "alt": "Abraham Lincoln",
     "category": "bullet art",
-    "status": "",
-    "description": ""
+    "status": "dispo",
+    "description": "Lincoln - cible C50 cadre bois et verre - 70 x 70 cm"
   },
   {
     "id": 108,
-    "path": "/bullet_art/daffy_duck_dev.webp",
-    "alt": "alt de l'image",
+    "path": "/bullet_art/kennedy.webp",
+    "alt": "John Fitzgerald Kennedy",
     "category": "bullet art",
-    "status": "",
-    "description": ""
+    "status": "dispo",
+    "description": "Kennedy - cible C50 cadre bois et verre - 70 x 70 cm"
   },
   {
     "id": 109,
-    "path": "/bullet_art/daffy_duck.webp",
-    "alt": "alt de l'image",
+    "path": "/bullet_art/trump.webp",
+    "alt": "Donald Trump",
     "category": "bullet art",
-    "status": "",
-    "description": ""
+    "status": "dispo",
+    "description": "Trump - cible C50 cadre bois et verre - 70 x 70 cm"
   },
   {
     "id": 110,
-    "path": "/bullet_art/Grominet-dev.webp",
-    "alt": "alt de l'image",
+    "path": "/bullet_art/trump-situaton.webp",
+    "alt": "Donald Trump en situation",
     "category": "bullet art",
     "status": "",
     "description": ""
   },
   {
     "id": 111,
-    "path": "/bullet_art/Grosminet.webp",
-    "alt": "alt de l'image",
+    "path": "/bullet_art/lincoln-kennedy-situation.webp",
+    "alt": "Portraits Lincoln et Kennedy en situation",
     "category": "bullet art",
     "status": "",
     "description": ""
   },
   {
     "id": 112,
-    "path": "/bullet_art/bullet_president2.webp",
-    "alt": "alt de l'image",
+    "path": "/bullet_art/presidents.webp",
+    "alt": "Portraits des présidents en situation",
     "category": "bullet art",
     "status": "",
     "description": ""
   },
   {
     "id": 113,
-    "path": "/bullet_art/bullet_president3.webp",
-    "alt": "alt de l'image",
+    "path": "/bullet_art/captain-america-c50.webp",
+    "alt": "Captain America sur cible C50",
     "category": "bullet art",
     "status": "",
-    "description": ""
+    "description": "Captain America - cible C50 cadre bois et verre - 70 x 70 cm"
   },
   {
     "id": 114,
-    "path": "/bullet_art/bullet_president1.webp",
-    "alt": "alt de l'image",
+    "path": "/bullet_art/deadpool.webp",
+    "alt": "Deadpool sur cible C50",
     "category": "bullet art",
     "status": "",
-    "description": ""
+    "description": "Deadpool - cible C50 cadre bois et verre - 70 x 70 cm"
   },
   {
     "id": 115,
-    "path": "/bullet_art/homer-run.webp",
-    "alt": "alt de l'image",
+    "path": "/bullet_art/spiderman.webp",
+    "alt": "Spiderman BD sur cible C50",
     "category": "bullet art",
     "status": "",
-    "description": ""
+    "description": "Spiderman BD - cible C50 cadre bois et verre - 70 x 70 cm"
   },
   {
     "id": 116,
-    "path": "/bullet_art/captain-america.webp",
-    "alt": "alt de l'image",
+    "path": "/bullet_art/batman-cible-prod.webp",
+    "alt": "Batman sur cible C50",
     "category": "bullet art",
     "status": "",
     "description": ""
   },
   {
     "id": 117,
-    "path": "/bullet_art/deadpool.webp",
-    "alt": "alt de l'image",
+    "path": "/bullet_art/batman-cible-situation.webp",
+    "alt": "Batman sur cible C50 en situation",
     "category": "bullet art",
     "status": "",
     "description": ""
   },
   {
     "id": 118,
-    "path": "/bullet_art/bullet-art-by-Phil.webp",
-    "alt": "alt de l'image",
+    "path": "/bullet_art/buzz-lightyear.webp",
+    "alt": "Buzz l’Éclair sur cible C50",
+    "category": "bullet art",
+    "status": "dispo",
+    "description": "Buzz l’Éclair - cible C50 cadre bois et verre - 70 x 70 cm"
+  },
+  {
+    "id": 119,
+    "path": "/bullet_art/titi-et-grosminet.webp",
+    "alt": "Titi et Grosminet sur cible C50",
+    "category": "bullet art",
+    "status": "",
+    "description": "Titi et Grosminet - cible C50 cadre bois et verre - 70 x 70 cm"
+  },
+  {
+    "id": 120,
+    "path": "/bullet_art/bugs-bunny.webp",
+    "alt": "Bugs Bunny sur cible C50",
+    "category": "bullet art",
+    "status": "dispo",
+    "description": "Bugs Bunny - cible C50 cadre bois et verre - 70 x 70 cm"
+  },
+  {
+    "id": 121,
+    "path": "/bullet_art/elmer.webp",
+    "alt": "Elmer le chasseur sur cible C50",
+    "category": "bullet art",
+    "status": "",
+    "description": "Elmer - cible C50 cadre bois et verre - 70 x 70 cm"
+  },
+  {
+    "id": 122,
+    "path": "/bullet_art/bip-bip-et-coyote.webp",
+    "alt": "Bip Bip et Coyote sur cible C50",
+    "category": "bullet art",
+    "status": "dispo",
+    "description": "Bip Bip et Coyote - cible C50 cadre bois et verre - 70 x 70 cm"
+  },
+  {
+    "id": 123,
+    "path": "/bullet_art/taz.webp",
+    "alt": "Taz le diable de Tasmanie sur cible C50",
+    "category": "bullet art",
+    "status": "dispo",
+    "description": "Taz - cible C50 cadre bois et verre - 70 x 70 cm"
+  },
+  {
+    "id": 124,
+    "path": "/bullet_art/fous-du-volant.webp",
+    "alt": "Les fous du volant sur cible C50",
+    "category": "bullet art",
+    "status": "dispo",
+    "description": "Les fous du volant - cible C50 cadre bois et verre - 70 x 70 cm"
+  },
+  {
+    "id": 125,
+    "path": "/bullet_art/coyote.webp",
+    "alt": "Coyotte sur cible",
     "category": "bullet art",
     "status": "",
     "description": ""
+  },
+  {
+    "id": 126,
+    "path": "/bullet_art/bip-bip.webp",
+    "alt": "Bip Bip sur cible",
+    "category": "bullet art",
+    "status": "",
+    "description": ""
+  },
+  {
+    "id": 127,
+    "path": "/bullet_art/bip-bip-situation.webp",
+    "alt": "Bip Bip sur cible en situation",
+    "category": "bullet art",
+    "status": "",
+    "description": ""
+  },
+  {
+    "id": 128,
+    "path": "/bullet_art/stitch.webp",
+    "alt": "Stitch sur cible C50",
+    "category": "bullet art",
+    "status": "",
+    "description": "Stitch - cible C50 cadre bois et verre - 70 x 70 cm"
+  },
+  {
+    "id": 129,
+    "path": "/bullet_art/bang.webp",
+    "alt": "Bang avec réplique d'arme",
+    "category": "bullet art",
+    "status": "réservée",
+    "description": "BANG! - bois et réplique - 80 x 40"
   },
   {
     "id": 201,
@@ -413,7 +501,7 @@
     "alt": "Mini et Rony",
     "category": "autres",
     "status": "",
-    "description": "Rony - toile sur cadre argent - 80 x 130 cm"
+    "description": "Rony - toile sur cadre argent - 130 x 80 cm"
   },
   {
     "id": 328,
