@@ -8,9 +8,8 @@ const stains = [
 ];
 
 const statusColors = {
-  "en cours": "bg-orange-500",
   "dispo": "bg-green-500",
-  "réservée": "bg-red-500",
+  "vendu": "bg-red-500",
 };
 
 const categoryDescriptions = {
@@ -30,7 +29,7 @@ const categoryDescriptions = {
           À la croisée du recyclage et de la créativité, <strong>le Bullet Art donne une seconde vie aux traces du tir</strong>, les sublimant en objets artistiques uniques et porteurs de sens.
         </p>
       </>
-    ),      
+    ),
   },
   mondrian: {
     longTitle: "Clin d’œil à Mondrian",
@@ -59,9 +58,8 @@ const categoryDescriptions = {
         </p>
       </>
     ),
-  }
+  },
 };
-
 
 const Galery = () => {
   const [filter, setFilter] = useState("all");
@@ -70,6 +68,7 @@ const Galery = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [fade, setFade] = useState(false);
   const [stain, setStain] = useState(null);
+  const [visibleCount, setVisibleCount] = useState(20);
 
   // Fonction de mélange (Fisher-Yates)
   const shuffleArray = (arr) => {
@@ -81,22 +80,22 @@ const Galery = () => {
     return newArr;
   };
 
-  // Au chargement initial et si le filtre est "all", on mélange les images
+  // Au chargement initial et si le filtre est "all", on mélange les images et on initialise visibleCount
   useEffect(() => {
     if (filter === "all") {
       setRandomAllImages(shuffleArray(imagesData));
+      setVisibleCount(20);
     }
   }, [filter]);
 
   // Calcul des éléments à afficher selon le filtre
   const filteredImages = useMemo(() => {
     if (filter === "all") {
-      return randomAllImages;
+      return randomAllImages.slice(0, visibleCount);
     } else {
       const imagesForCat = imagesData
         .filter((img) => img.category === filter)
         .sort((a, b) => a.id - b.id);
-      // Crée un objet description pour la catégorie
       const descObj = {
         id: `desc-${filter}`,
         type: "desc",
@@ -106,7 +105,7 @@ const Galery = () => {
       };
       return [descObj, ...imagesForCat];
     }
-  }, [filter, randomAllImages]);
+  }, [filter, randomAllImages, visibleCount]);
 
   const openLightbox = (index) => {
     setCurrentIndex(index);
@@ -181,7 +180,6 @@ const Galery = () => {
     };
   }, [lightboxOpen, nextImage, prevImage]);
 
-  // Lors d'un changement de filtre, on génère une tache aléatoire (uniquement pour les catégories autres que "all")
   const handleClick = (cat) => {
     if (filter === cat) return;
     setFilter(cat);
@@ -203,7 +201,9 @@ const Galery = () => {
               key={cat}
               onClick={() => handleClick(cat)}
               className={`relative w-full px-4 py-2 rounded-lg font-secondary md:text-xl font-medium transition cursor-custom ${
-                filter === cat ? "text-black bg-slate-400 transition-transform duration-300 ease-in-out hover:scale-110" : "text-white bg-slate-700 hover:bg-slate-600 transition-transform duration-300 ease-in-out hover:scale-110"
+                filter === cat
+                  ? "text-black bg-slate-400 transition-transform duration-300 ease-in-out hover:scale-110"
+                  : "text-white bg-slate-700 hover:bg-slate-600 transition-transform duration-300 ease-in-out hover:scale-110"
               }`}
             >
               {cat === "all" ? "TOUS" : cat.toUpperCase()}
@@ -219,53 +219,63 @@ const Galery = () => {
           ))}
         </div>
 
-        {/* Galerie d'images */}
+        
+
+        {/* Galerie d'images (les cellules restent carrées) */}
         <div className="grid grid-cols-2 lg:grid-cols-4 md:gap-10 gap-4">
-        {filteredImages.map((item, index) => (
-          <div
-            key={item.id}
-            className="cursor-pointer overflow-hidden rounded-lg shadow-lg aspect-square flex items-center justify-center transition-transform duration-300 ease-in-out hover:scale-110"
-            onClick={() => openLightbox(index)}
-          >
-            {item.type === "desc" ? (
-              // Card de description dans la grille
-              <div className="w-full h-full bg-white text-black relative p-3 pb-10 md:p-4 flex flex-col">
-                <div className="font-secondary md:text-xl uppercase">{item.longTitle}</div>
-                <div className="relative flex-1 mt-1 text-xs md:text-base overflow-hidden min-h-[4rem]">
-                  <div>{item.longText}</div>
-                  <div className="absolute bottom-0 left-0 w-full h-[100px] bg-gradient-to-t from-white via-white/80 to-transparent pointer-events-none z-0"></div>
-                </div>
-                <span className="absolute bottom-3 right-3 text-blue-600 text-xs cursor-pointer z-10 px-1 font-bold">
-                  lire la suite...
-                </span>
-              </div>
-            ) : (
-              // Image avec bandeau de statut
-              <div className="relative w-full h-full">
-                <img
-                  src={item.path}
-                  alt={item.alt}
-                  className="w-full h-full object-cover rounded-lg"
-                />
-                {item.status && (
-                  <div
-                    className={`absolute top-16 left-[-23px] transform -rotate-45 origin-top-left text-center text-white text-xs font-bold px-2 py-1 logo-shadow ${
-                      statusColors[item.status.toLowerCase()] || "bg-gray-500"
-                    }`}
-                    style={{ width: "120px" }}
-                  >
-                    {item.status.toUpperCase()}
+          {filteredImages.map((item, index) => (
+            <div
+              key={item.id}
+              className="cursor-pointer overflow-hidden rounded-lg shadow-lg aspect-square flex items-center justify-center transition-transform duration-300 ease-in-out hover:scale-110"
+              onClick={() => openLightbox(index)}
+            >
+              {item.type === "desc" ? (
+                // Card de description dans la grille
+                <div className="w-full h-full bg-white text-black relative p-3 pb-10 md:p-4 flex flex-col">
+                  <div className="font-secondary md:text-xl uppercase">{item.longTitle}</div>
+                  <div className="relative flex-1 mt-1 text-xs md:text-base overflow-hidden min-h-[4rem]">
+                    <div>{item.longText}</div>
+                    <div className="absolute bottom-0 left-0 w-full h-[100px] bg-gradient-to-t from-white via-white/80 to-transparent pointer-events-none z-0"></div>
                   </div>
-                  
-                )}
-                {/* <span className="absolute bottom-3 right-3 text-blue-600 text-xs cursor-pointer z-10 px-1 font-bold">
-                  voir les détails
-                </span> */}
-              </div>
-            )}
+                  <span className="absolute bottom-3 right-3 text-blue-600 text-xs cursor-pointer z-10 px-1 font-bold">
+                    lire la suite...
+                  </span>
+                </div>
+              ) : (
+                // Image avec bandeau de statut
+                <div className="relative w-full h-full">
+                  <img
+                    src={item.path}
+                    alt={item.alt}
+                    className="w-full h-full object-cover rounded-lg"
+                  />
+                  {item.status && (
+                    <div
+                      className={`absolute top-16 left-[-23px] transform -rotate-45 origin-top-left text-center text-white text-xs font-bold px-2 py-1 logo-shadow ${
+                        statusColors[item.status.toLowerCase()] || "bg-gray-500"
+                      }`}
+                      style={{ width: "120px" }}
+                    >
+                      {item.status.toUpperCase()}
+                    </div>
+                  )}
+                </div>
+              )}
+            </div>
+          ))}
+        </div>
+
+        {/* Afficher plus (seulement pour "TOUS") */}
+        {filter === "all" && visibleCount < randomAllImages.length && (
+          <div className="flex justify-center mt-4">
+            <button
+              className="px-4 py-2 my-5 bg-slate-700 text-white font-secondary uppercase rounded-lg hover:bg-slate-600 transition-transform duration-300 ease-in-out hover:scale-110 cursor-custom"
+              onClick={() => setVisibleCount(visibleCount + 20)}
+            >
+              Afficher +
+            </button>
           </div>
-        ))}
-      </div>
+        )}
 
       </div>
 
@@ -284,7 +294,7 @@ const Galery = () => {
                 </div>
               </div>
             ) : (
-              // Affichage de l'image avec bandeau de statut dans la lightbox
+              // Affichage de l'image avec bandeau de statut et bandeau de description dans la lightbox
               <div className="relative inline-block overflow-hidden rounded-lg">
                 <img
                   src={filteredImages[currentIndex].path}
@@ -301,13 +311,11 @@ const Galery = () => {
                     {filteredImages[currentIndex].status.toUpperCase()}
                   </div>
                 )}
-
-                {/* Bandeau de description en bas */}
-                  {filteredImages[currentIndex].description && (
-                    <div className="absolute bottom-0 left-0 w-full bg-white/80 text-black text-right text-xs p-2">
-                      {filteredImages[currentIndex].description}
-                    </div>
-                  )}
+                {filteredImages[currentIndex].description && (
+                  <div className="absolute bottom-0 left-0 w-full bg-white/80 text-black text-right text-xs p-2">
+                    {filteredImages[currentIndex].description}
+                  </div>
+                )}
               </div>
             )}
           </div>

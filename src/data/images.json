@@ -194,18 +194,18 @@
   {
     "id": 125,
     "path": "/bullet_art/coyote.webp",
-    "alt": "Coyotte sur cible",
+    "alt": "Coyotte sur cible cœur de C50",
     "category": "bullet art",
-    "status": "",
-    "description": ""
+    "status": "dispo",
+    "description": "cible cœur de C50 cadre bois et verre - 30 x 30 cm"
   },
   {
     "id": 126,
     "path": "/bullet_art/bip-bip.webp",
-    "alt": "Bip Bip sur cible",
+    "alt": "Bip Bip sur cible cœur de C50",
     "category": "bullet art",
-    "status": "",
-    "description": ""
+    "status": "dispo",
+    "description": "cible cœur de C50 cadre bois et verre - 30 x 30 cm"
   },
   {
     "id": 127,
@@ -228,8 +228,8 @@
     "path": "/bullet_art/bang.webp",
     "alt": "Bang avec réplique d'arme",
     "category": "bullet art",
-    "status": "réservée",
-    "description": "BANG! - bois et réplique - 80 x 40"
+    "status": "vendu",
+    "description": "BANG! - bois et réplique - 40 x 80 cm"
   },
   {
     "id": 201,
@@ -237,7 +237,7 @@
     "alt": "Mondrian 1",
     "category": "mondrian",
     "status": "",
-    "description": "toile sur cadre argent - 150 x 100 cm"
+    "description": "toile sur caisse américaine - 150 x 100 cm"
   },
   {
     "id": 202,
@@ -245,7 +245,7 @@
     "alt": "Mondrian ensemble Simpson",
     "category": "mondrian",
     "status": "dispo",
-    "description": "toile sur cadre argent - 120 x 120 cm"
+    "description": "toile sur caisse américaine - 120 x 120 cm"
   },
   {
     "id": 203,
@@ -253,7 +253,7 @@
     "alt": "Mondrian 2",
     "category": "mondrian",
     "status": "dispo",
-    "description": "toile sur cadre argent - 150 x 100 cm"
+    "description": "toile sur caisse américaine - 150 x 100 cm"
   },
   {
     "id": 204,
@@ -265,27 +265,35 @@
   },
   {
     "id": 205,
+    "path": "/mondrian/mondrian3.webp",
+    "alt": "Mondrian 3",
+    "category": "mondrian",
+    "status": "",
+    "description": "toile sur caisse américaine - 150 x 100 cm"
+  },
+  {
+    "id": 206,
     "path": "/mondrian/mondrian-jeux-video.webp",
     "alt": "Mondrian jeux vidéo",
     "category": "mondrian",
     "status": "dispo",
-    "description": "toile sur cadre argent - 80 x 60 cm"
+    "description": "toile sur caisse américaine - 80 x 60 cm"
   },
   {
-    "id": 206,
+    "id": 207,
     "path": "/mondrian/mondrian-manga.webp",
     "alt": "Mondrian manga",
     "category": "mondrian",
     "status": "dispo",
-    "description": "toile sur cadre argent - 80 x 60 cm"
+    "description": "toile sur caisse américaine - 80 x 60 cm"
   },
   {
-    "id": 207,
+    "id": 208,
     "path": "/mondrian/big-mondrian.webp",
     "alt": "Big Mondrian",
     "category": "mondrian",
     "status": "",
-    "description": "toile sur cadre argent - 100 x 150 cm"
+    "description": "toile sur caisse américaine - 100 x 150 cm"
   },
   {
     "id": 301,
@@ -309,7 +317,7 @@
     "alt": "France",
     "category": "autres",
     "status": "dispo",
-    "description": "F - toile sur cadre argent - 100 x 80 cm"
+    "description": "F - toile sur caisse américaine - 100 x 80 cm"
   },
   {
     "id": 304,
@@ -325,7 +333,7 @@
     "alt": "Le rat de B",
     "category": "autres",
     "status": "dispo",
-    "description": "Le rat de B - toile sur cadre argent - 65 x 54 cm"
+    "description": "Le rat de B - toile sur caisse américaineé - 65 x 54 cm"
   },
   {
     "id": 306,
@@ -333,7 +341,7 @@
     "alt": "Graffiti par Phil",
     "category": "autres",
     "status": "",
-    "description": "toile sur cadre argent - 100 x 73 cm"
+    "description": "toile sur caisse américaine - 100 x 73 cm"
   },
   {
     "id": 307,
@@ -349,7 +357,7 @@
     "alt": "No war",
     "category": "autres",
     "status": "dispo",
-    "description": "No War - toile sur cadre argent - 150 x 100 cm"
+    "description": "No War - toile sur caisse américaine - 150 x 100 cm"
   },
   {
     "id": 309,
@@ -357,7 +365,7 @@
     "alt": "Dragon Ball Z",
     "category": "autres",
     "status": "dispo",
-    "description": "DBZ - toile sur cadre argent - 46 x 38 cm"
+    "description": "DBZ - toile sur caisse américaine - 46 x 38 cm"
   },
   {
     "id": 310,
@@ -381,7 +389,7 @@
     "alt": "Wonder Woman is a big slut",
     "category": "autres",
     "status": "dispo",
-    "description": "Catwoman - papier sur cadre verre - 77 x 22 cm"
+    "description": "Catwoman - papier sur cadre verre - 77 x 62 cm"
   },
   {
     "id": 313,
@@ -397,7 +405,7 @@
     "alt": "Graffiti PEACE",
     "category": "autres",
     "status": "dispo",
-    "description": "Peace - toile sur cadre argent - 100 x 116 cm"
+    "description": "Peace - toile sur caisse américaine - 100 x 116 cm"
   },
   {
     "id": 315,
@@ -469,7 +477,7 @@
     "alt": "Wonder Woman style Warhol",
     "category": "autres",
     "status": "dispo",
-    "description": "toile sur cadre argent - 70 x 50 cm"
+    "description": "toile sur caisse américaine - 70 x 50 cm"
   },
   {
     "id": 324,
@@ -493,15 +501,15 @@
     "alt": "Pura Vida Mini et la défonce",
     "category": "autres",
     "status": "",
-    "description": "toile sur cadre argent - 130 x 100 cm"
+    "description": "toile sur caisse américaine - 130 x 100 cm"
   },
   {
     "id": 327,
-    "path": "/autre/rony.webp",
-    "alt": "Mini et Rony",
+    "path": "/autre/romy.webp",
+    "alt": "Mini et Romy",
     "category": "autres",
     "status": "",
-    "description": "Rony - toile sur cadre argent - 130 x 80 cm"
+    "description": "Romy - toile sur caisse américaine - 130 x 80 cm"
   },
   {
     "id": 328,
@@ -557,7 +565,7 @@
     "alt": "L'Amour est patiente",
     "category": "autres",
     "status": "dispo",
-    "description": "L’Amour - toile sur cadre argent - 130 x 200 cm"
+    "description": "L’Amour - toile sur caisse américaine - 130 x 200 cm"
   },
   {
     "id": 335,
