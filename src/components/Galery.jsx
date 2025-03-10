@@ -221,11 +221,16 @@ const Galery = () => {
         </div>
         
         {/* Galerie d'images (les cellules restent carrées) */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 md:gap-10 gap-4">
-          {filteredImages.map((item, index) => (
-            <GalleryItem key={item.id} item={item} onClick={() => openLightbox(index)} statusColors={statusColors} />
-          ))}
-        </div>
+          <div className="grid grid-cols-2 lg:grid-cols-4 md:gap-10 gap-4">
+            {filteredImages.map((item, index) => (
+              <GalleryItem
+                key={`${item.id}-${filter}`} // Ajout de filter dans la clé pour forcer le remontage lors du changement de filtre
+                item={item}
+                onClick={() => openLightbox(index)}
+                statusColors={statusColors}
+              />
+            ))}
+          </div>
         
         {/* Bouton "Afficher +" placé sous la galerie */}
         {filter === "all" && visibleCount < randomAllImages.length && (

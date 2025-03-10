@@ -1,17 +1,23 @@
-// GalleryItem.jsx
-import { useRef } from "react";
+import { useRef, useState, useEffect } from "react";
 import PropTypes from "prop-types";
 import { useOnScreen } from "../hook/useOnScreen";
 
 const GalleryItem = ({ item, onClick, statusColors }) => {
   const ref = useRef(null);
   const isVisible = useOnScreen(ref, "-50px");
+  const [hasAppeared, setHasAppeared] = useState(false);
+
+  useEffect(() => {
+    if (isVisible && !hasAppeared) {
+      setHasAppeared(true);
+    }
+  }, [isVisible, hasAppeared]);
 
   return (
     <div
       ref={ref}
       className={`cursor-pointer overflow-hidden rounded-lg shadow-lg aspect-square flex items-center justify-center transition-transform duration-300 ease-in-out hover:scale-110 ${
-        isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+        hasAppeared ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
       }`}
       onClick={onClick}
     >
@@ -51,6 +57,7 @@ const GalleryItem = ({ item, onClick, statusColors }) => {
     </div>
   );
 };
+
 GalleryItem.propTypes = {
   item: PropTypes.shape({
     type: PropTypes.string.isRequired,
