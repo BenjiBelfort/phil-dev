@@ -1,5 +1,6 @@
 import { useState, useEffect, useCallback, useMemo } from "react";
 import imagesData from "../data/images.json";
+import GalleryItem from "./GalleryItem"; // Assurez-vous que le chemin est correct
 
 const stains = [
   "/taches/tache1.png",
@@ -218,73 +219,32 @@ const Galery = () => {
             </button>
           ))}
         </div>
-
         
-
         {/* Galerie d'images (les cellules restent carrées) */}
         <div className="grid grid-cols-2 lg:grid-cols-4 md:gap-10 gap-4">
           {filteredImages.map((item, index) => (
-            <div
-              key={item.id}
-              className="cursor-pointer overflow-hidden rounded-lg shadow-lg aspect-square flex items-center justify-center transition-transform duration-300 ease-in-out hover:scale-110"
-              onClick={() => openLightbox(index)}
-            >
-              {item.type === "desc" ? (
-                // Card de description dans la grille
-                <div className="w-full h-full bg-white text-black relative p-3 pb-10 md:p-4 flex flex-col">
-                  <div className="font-secondary md:text-xl uppercase">{item.longTitle}</div>
-                  <div className="relative flex-1 mt-1 text-xs md:text-base overflow-hidden min-h-[4rem]">
-                    <div>{item.longText}</div>
-                    <div className="absolute bottom-0 left-0 w-full h-[100px] bg-gradient-to-t from-white via-white/80 to-transparent pointer-events-none z-0"></div>
-                  </div>
-                  <span className="absolute bottom-3 right-3 text-blue-600 text-xs cursor-pointer z-10 px-1 font-bold">
-                    lire la suite...
-                  </span>
-                </div>
-              ) : (
-                // Image avec bandeau de statut
-                <div className="relative w-full h-full">
-                  <img
-                    src={item.path}
-                    alt={item.alt}
-                    className="w-full h-full object-cover rounded-lg"
-                  />
-                  {item.status && (
-                    <div
-                      className={`absolute top-16 left-[-23px] transform -rotate-45 origin-top-left text-center text-white text-xs font-bold px-2 py-1 logo-shadow ${
-                        statusColors[item.status.toLowerCase()] || "bg-gray-500"
-                      }`}
-                      style={{ width: "120px" }}
-                    >
-                      {item.status.toUpperCase()}
-                    </div>
-                  )}
-                </div>
-              )}
-            </div>
+            <GalleryItem key={item.id} item={item} onClick={() => openLightbox(index)} statusColors={statusColors} />
           ))}
         </div>
-
-        {/* Afficher plus (seulement pour "TOUS") */}
+        
+        {/* Bouton "Afficher +" placé sous la galerie */}
         {filter === "all" && visibleCount < randomAllImages.length && (
-          <div className="flex justify-center mt-4">
+          <div className="flex justify-center mt-6">
             <button
-              className="px-4 py-2 my-5 bg-slate-700 text-white font-secondary uppercase rounded-lg hover:bg-slate-600 transition-transform duration-300 ease-in-out hover:scale-110 cursor-custom"
+              className="px-4 py-2 bg-slate-700 text-white font-secondary uppercase rounded-lg hover:bg-slate-600 transition-transform duration-300 ease-in-out hover:scale-110 cursor-custom"
               onClick={() => setVisibleCount(visibleCount + 20)}
             >
               Afficher +
             </button>
           </div>
         )}
-
       </div>
-
+      
       {/* Lightbox */}
       {lightboxOpen && (
         <div className="fixed inset-0 bg-black flex justify-center items-center z-50">
           <div className={`transition-opacity duration-200 ${fade ? "opacity-0" : "opacity-100"}`}>
             {filteredImages[currentIndex].type === "desc" ? (
-              // Grande card descriptive pour les descriptions
               <div className="max-w-[80vw] md:max-w-[50vw] max-h-[80vh] bg-white text-black p-6 md:p-10 rounded-lg overflow-auto">
                 <div className="font-secondary text-2xl md:text-3xl uppercase">
                   {filteredImages[currentIndex].longTitle}
@@ -294,7 +254,6 @@ const Galery = () => {
                 </div>
               </div>
             ) : (
-              // Affichage de l'image avec bandeau de statut et bandeau de description dans la lightbox
               <div className="relative inline-block overflow-hidden rounded-lg">
                 <img
                   src={filteredImages[currentIndex].path}
