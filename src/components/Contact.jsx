@@ -2,6 +2,8 @@ import { useRef, useState, useEffect, useCallback } from "react";
 import emailjs from "@emailjs/browser";
 import { motion, AnimatePresence } from "framer-motion";
 import { EnvelopeIcon } from "@heroicons/react/24/outline";
+import instaLogo from "../assets/instagram_blanc.png";
+
 
 const stains = [
   "/taches/tache1.png",
@@ -108,8 +110,8 @@ const Contact = () => {
       </div>
 
       {/* Texte intro */}
-      <div className="text-white text-center text-lg md:text-2xl px-4 mt-10">
-        <p>Vous souhaitez une œuvre personnalisée ? Contactez-moi !</p>
+      <div className="text-white text-center text-lg md:text-2xl px-5 mt-10">
+        <p>Intéressé par une œuvre ou besoin d’informations ?<br />Je suis à votre disposition, contactez-moi !</p>
       </div>
 
       <AnimatePresence mode="wait">
@@ -220,6 +222,21 @@ const Contact = () => {
           </motion.div>
         )}
       </AnimatePresence>
+
+      <div className="flex justify-center my-16">
+        <a
+          href="https://www.instagram.com/philippegueutal/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src={instaLogo}
+            alt="Instagram"
+            className="w-16 h-16 transition-transform duration-300 hover:scale-110 logo-shadow"
+          />
+        </a>
+      </div>
+
     </section>
   );
 };
