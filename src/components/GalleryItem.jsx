@@ -1,28 +1,16 @@
-import { useRef, useState, useEffect } from "react";
+import { motion } from "framer-motion";
 import PropTypes from "prop-types";
-import { useOnScreen } from "../hook/useOnScreen";
 
 const GalleryItem = ({ item, onClick, statusColors }) => {
-  const ref = useRef(null);
-  const isVisible = useOnScreen(ref, "-50px");
-  const [hasAppeared, setHasAppeared] = useState(false);
-
-  useEffect(() => {
-    if (isVisible && !hasAppeared) {
-      setHasAppeared(true);
-    }
-  }, [isVisible, hasAppeared]);
-
   return (
-    <div
-      ref={ref}
-      className={`cursor-pointer overflow-hidden rounded-lg shadow-lg aspect-square flex items-center justify-center transition-transform duration-300 ease-in-out hover:scale-110 ${
-        hasAppeared ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-      }`}
+    <motion.div
+      className="cursor-pointer overflow-hidden rounded-lg shadow-lg aspect-square flex items-center justify-center transition-transform duration-300 ease-in-out hover:scale-110"
       onClick={onClick}
+      initial={{ opacity: 0, y: 10 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, margin: "-50px" }}
     >
       {item.type === "desc" ? (
-        // Card de description dans la grille
         <div className="w-full h-full bg-white text-black relative p-3 pb-10 md:p-4 flex flex-col">
           <div className="font-secondary md:text-xl uppercase">{item.longTitle}</div>
           <div className="relative flex-1 mt-1 text-xs md:text-base overflow-hidden min-h-[4rem]">
@@ -34,7 +22,6 @@ const GalleryItem = ({ item, onClick, statusColors }) => {
           </span>
         </div>
       ) : (
-        // Image avec bandeau de statut
         <div className="relative w-full h-full">
           <img
             src={item.path}
@@ -54,7 +41,7 @@ const GalleryItem = ({ item, onClick, statusColors }) => {
           )}
         </div>
       )}
-    </div>
+    </motion.div>
   );
 };
 
