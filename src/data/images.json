@@ -289,6 +289,14 @@
   },
   {
     "id": 208,
+    "path": "/mondrian/mondrian-manga2.webp",
+    "alt": "Mondrian manga en situation",
+    "category": "mondrian",
+    "status": "",
+    "description": ""
+  },
+  {
+    "id": 209,
     "path": "/mondrian/big-mondrian.webp",
     "alt": "Big Mondrian",
     "category": "mondrian",
@@ -324,7 +332,7 @@
     "path": "/autre/graph.webp",
     "alt": "Graffiti par Phil",
     "category": "autres",
-    "status": "en cours",
+    "status": "",
     "description": "toile sur caisse américaine - 100 x 73 cm"
   },
   {
@@ -553,6 +561,30 @@
   },
   {
     "id": 333,
+    "path": "/autre/amour-patiente-detail1.webp",
+    "alt": "L'Amour est patiente détail 1",
+    "category": "autres",
+    "status": "",
+    "description": "L’Amour - détail 1"
+  },
+  {
+    "id": 334,
+    "path": "/autre/amour-patiente-detail2.webp",
+    "alt": "L'Amour est patiente détail 2",
+    "category": "autres",
+    "status": "",
+    "description": "L’Amour - détail 2"
+  },
+  {
+    "id": 335,
+    "path": "/autre/amour-patiente-detail3.webp",
+    "alt": "L'Amour est patiente détail 3",
+    "category": "autres",
+    "status": "",
+    "description": "L’Amour - détail 3"
+  },
+  {
+    "id": 336,
     "path": "/autre/bad-bitch.webp",
     "alt": "Bad Bitch",
     "category": "autres",
@@ -560,7 +592,7 @@
     "description": ""
   },
   {
-    "id": 334,
+    "id": 337,
     "path": "/autre/leopard.webp",
     "alt": "Léopard de l'Amour",
     "category": "autres",
@@ -568,7 +600,7 @@
     "description": "toile - 150 x 100 cm"
   },
   {
-    "id": 335,
+    "id": 338,
     "path": "/autre/leopard-situation.webp",
     "alt": "Léopard de l'Amour en situation",
     "category": "autres",
@@ -576,7 +608,7 @@
     "description": ""
   },
   {
-    "id": 336,
+    "id": 339,
     "path": "/autre/justice.webp",
     "alt": "Justice en France",
     "category": "autres",
@@ -584,9 +616,25 @@
     "description": "Justice - dessin - 70 x 50 cm"
   },
   {
-    "id": 337,
+    "id": 340,
     "path": "/autre/wood.webp",
     "alt": "Peinture sur le bois",
+    "category": "autres",
+    "status": "",
+    "description": ""
+  },
+  {
+    "id": 341,
+    "path": "/autre/I_love_Gaza.webp",
+    "alt": "I love Gaza",
+    "category": "autres",
+    "status": "",
+    "description": ""
+  },
+  {
+    "id": 342,
+    "path": "/autre/I-love-Gaza2.webp",
+    "alt": "I love Gaza en situation",
     "category": "autres",
     "status": "",
     "description": ""

@@ -111,7 +111,7 @@ const Contact = () => {
 
       {/* Texte intro */}
       <div className="text-white text-center text-lg md:text-2xl px-5 mt-10">
-        <p>Intéressé par une œuvre ou besoin d’informations ?<br />Je suis à votre disposition, contactez-moi !</p>
+        <p>Intéressé par une œuvre ou besoin d’informations ?<br />Je suis à votre disposition, <br /> contactez-moi !</p>
       </div>
 
       <AnimatePresence mode="wait">

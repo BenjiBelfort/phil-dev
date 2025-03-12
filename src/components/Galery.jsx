@@ -346,3 +346,4 @@ const Galery = () => {
 };
 
 export default Galery;
+
