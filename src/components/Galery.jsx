@@ -1,5 +1,9 @@
 import { useState, useEffect, useCallback, useMemo } from "react";
 import imagesData from "../data/images.json";
+import GalleryFilter from "./GaleryFilter";
+import GalleryGrid from "./GaleryGrid";
+import Lightbox from "./Lightbox";
+import { shuffleArray } from "../utils/helpers";
 
 const stains = [
   "/taches/tache1.png",
@@ -72,14 +76,12 @@ const Galery = () => {
   const [visibleCount, setVisibleCount] = useState(20);
 
   // Fonction de mélange (Fisher-Yates)
-  const shuffleArray = (arr) => {
-    const newArr = [...arr];
-    for (let i = newArr.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [newArr[i], newArr[j]] = [newArr[j], newArr[i]];
+  useEffect(() => {
+    if (filter === "all") {
+      setRandomAllImages(shuffleArray(imagesData));
+      setVisibleCount(20);
     }
-    return newArr;
-  };
+  }, [filter]);
 
   // Au chargement initial et si le filtre est "all", on mélange les images et on initialise visibleCount
   useEffect(() => {
@@ -193,81 +195,25 @@ const Galery = () => {
   return (
     <section id="gallery">
       <div className="container mx-auto px-4 py-10">
-        <h3 className="uppercase font-primary text-white text-5xl md:text-7xl text-center my-12">Galerie</h3>
-        
-        {/* Boutons de filtres */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 md:gap-10 gap-4 mb-6 md:mb-8">
-          {["all", "bullet art", "mondrian", "autres"].map((cat) => (
-            <button
-              key={cat}
-              onClick={() => handleClick(cat)}
-              className={`relative w-full px-4 py-2 rounded-lg font-secondary md:text-xl font-medium transition cursor-custom ${
-                filter === cat
-                  ? "text-black bg-slate-400 transition-transform duration-300 ease-in-out hover:scale-110"
-                  : "text-white bg-slate-700 hover:bg-slate-600 transition-transform duration-300 ease-in-out hover:scale-110"
-              }`}
-            >
-              {cat === "all" ? "TOUS" : cat.toUpperCase()}
-              {filter === cat && stain && (
-                <img
-                  src={stain.src}
-                  alt="Tâche"
-                  className="absolute left-1/2 top-1/2 w-12 h-12 pointer-events-none stain-animation"
-                  style={{ transform: `translate(-50%, -50%) rotate(${stain.rotation}deg)` }}
-                />
-              )}
-            </button>
-          ))}
-        </div>
+        <h3 className="uppercase font-primary text-white text-5xl md:text-7xl text-center my-12">
+          Galerie
+        </h3>
 
-        
+        {/* Intégration du composant GalleryFilter */}
+        <GalleryFilter
+          currentFilter={filter}
+          onChangeFilter={handleClick}
+          stain={stain}
+        />
 
-        {/* Galerie d'images (les cellules restent carrées) */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 md:gap-10 gap-4">
-          {filteredImages.map((item, index) => (
-            <div
-              key={item.id}
-              className="cursor-pointer overflow-hidden rounded-lg shadow-lg aspect-square flex items-center justify-center transition-transform duration-300 ease-in-out hover:scale-110"
-              onClick={() => openLightbox(index)}
-            >
-              {item.type === "desc" ? (
-                // Card de description dans la grille
-                <div className="w-full h-full bg-white text-black relative p-3 pb-10 md:p-4 flex flex-col">
-                  <div className="font-secondary md:text-xl uppercase">{item.longTitle}</div>
-                  <div className="relative flex-1 mt-1 text-xs md:text-base overflow-hidden min-h-[4rem]">
-                    <div>{item.longText}</div>
-                    <div className="absolute bottom-0 left-0 w-full h-[100px] bg-gradient-to-t from-white via-white/80 to-transparent pointer-events-none z-0"></div>
-                  </div>
-                  <span className="absolute bottom-3 right-3 text-blue-600 text-xs cursor-pointer z-10 px-1 font-bold">
-                    lire la suite...
-                  </span>
-                </div>
-              ) : (
-                // Image avec bandeau de statut
-                <div className="relative w-full h-full">
-                  <img
-                    src={item.path}
-                    alt={item.alt}
-                    loading="lazy"
-                    className="w-full h-full object-cover rounded-lg"
-                  />
-                  {item.status && (
-                    <div
-                      className={`absolute top-16 left-[-23px] transform -rotate-45 origin-top-left text-center text-white text-xs font-bold px-2 py-1 logo-shadow ${
-                        statusColors[item.status.toLowerCase()] || "bg-gray-500"
-                      }`}
-                      style={{ width: "120px" }}
-                    >
-                      {item.status.toUpperCase()}
-                    </div>
-                  )}
-                </div>
-              )}
-            </div>
-          ))}
-        </div>
+        {/* Intégration du composant GalleryGrid */}
+        <GalleryGrid
+          images={filteredImages}
+          openLightbox={openLightbox}
+          statusColors={statusColors}
+        />
 
-        {/* Afficher plus (seulement pour "TOUS") */}
+        {/* Bouton "Afficher +" pour "TOUS" */}
         {filter === "all" && visibleCount < randomAllImages.length && (
           <div className="flex justify-center mt-4">
             <button
@@ -278,72 +224,22 @@ const Galery = () => {
             </button>
           </div>
         )}
-
       </div>
 
-      {/* Lightbox */}
+      {/* Intégration du composant Lightbox */}
       {lightboxOpen && (
-        <div className="fixed inset-0 bg-black flex justify-center items-center z-50">
-          <div className={`transition-opacity duration-200 ${fade ? "opacity-0" : "opacity-100"}`}>
-            {filteredImages[currentIndex].type === "desc" ? (
-              // Grande card descriptive pour les descriptions
-              <div className="max-w-[80vw] md:max-w-[50vw] max-h-[80vh] bg-white text-black p-6 md:p-10 rounded-lg overflow-auto">
-                <div className="font-secondary text-2xl md:text-3xl uppercase">
-                  {filteredImages[currentIndex].longTitle}
-                </div>
-                <div className="mt-3 md:mt-4 md:text-xl">
-                  {filteredImages[currentIndex].longText}
-                </div>
-              </div>
-            ) : (
-              // Affichage de l'image avec bandeau de statut et bandeau de description dans la lightbox
-              <div className="relative inline-block overflow-hidden rounded-lg">
-                <img
-                  src={filteredImages[currentIndex].path}
-                  alt={filteredImages[currentIndex].alt}
-                  className="max-w-[90vw] max-h-[90vh] object-contain rounded-lg"
-                />
-                {filteredImages[currentIndex].status && (
-                  <div
-                    className={`absolute top-25 left-[-40px] transform -rotate-45 origin-top-left text-center text-white font-bold px-2 py-1 logo-shadow ${
-                      statusColors[filteredImages[currentIndex].status.toLowerCase()] || "bg-gray-500"
-                    }`}
-                    style={{ width: "200px" }}
-                  >
-                    {filteredImages[currentIndex].status.toUpperCase()}
-                  </div>
-                )}
-                {filteredImages[currentIndex].description && (
-                  <div className="absolute bottom-0 left-0 w-full bg-white/80 text-black text-right text-xs p-2">
-                    {filteredImages[currentIndex].description}
-                  </div>
-                )}
-              </div>
-            )}
-          </div>
-          <button
-            className="absolute top-4 right-4 md:right-20 xl:right-35 text-white text-4xl cursor-pointer hover:scale-110"
-            onClick={closeLightbox}
-          >
-            &times;
-          </button>
-          <button
-            className="absolute left-4 md:left-20 xl:left-35 text-white text-4xl md:text-7xl cursor-pointer filter nav-shadow hover:scale-110"
-            onClick={prevImage}
-          >
-            &#8249;
-          </button>
-          <button
-            className="absolute right-4 md:right-20 xl:right-35 text-white text-4xl md:text-7xl cursor-pointer filter nav-shadow hover:scale-110"
-            onClick={nextImage}
-          >
-            &#8250;
-          </button>
-        </div>
+        <Lightbox
+          images={filteredImages}
+          currentIndex={currentIndex}
+          fade={fade}
+          closeLightbox={closeLightbox}
+          nextImage={nextImage}
+          prevImage={prevImage}
+          statusColors={statusColors}
+        />
       )}
     </section>
   );
 };
 
 export default Galery;
-

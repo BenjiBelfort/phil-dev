@@ -121,6 +121,14 @@
   },
   {
     "id": 116,
+    "path": "/bullet_art/catwoman-cible.webp",
+    "alt": "Catwoman BD sur cible C51",
+    "category": "bullet art",
+    "status": "",
+    "description": "Catwoman BD - cible C50 cadre bois et verre - 70 x 70 cm"
+  },
+  {
+    "id": 117,
     "path": "/bullet_art/batman-cible-prod.webp",
     "alt": "Batman sur cible C50",
     "category": "bullet art",
@@ -128,7 +136,7 @@
     "description": ""
   },
   {
-    "id": 117,
+    "id": 118,
     "path": "/bullet_art/batman-cible-situation.webp",
     "alt": "Batman sur cible C50 en situation",
     "category": "bullet art",
@@ -136,7 +144,7 @@
     "description": ""
   },
   {
-    "id": 118,
+    "id": 119,
     "path": "/bullet_art/buzz-lightyear.webp",
     "alt": "Buzz l’Éclair sur cible C50",
     "category": "bullet art",
@@ -144,7 +152,7 @@
     "description": "Buzz l’Éclair - cible C50 cadre bois et verre - 70 x 70 cm"
   },
   {
-    "id": 119,
+    "id": 120,
     "path": "/bullet_art/titi-et-grosminet.webp",
     "alt": "Titi et Grosminet sur cible C50",
     "category": "bullet art",
@@ -152,7 +160,7 @@
     "description": "Titi et Grosminet - cible C50 cadre bois et verre - 70 x 70 cm"
   },
   {
-    "id": 120,
+    "id": 121,
     "path": "/bullet_art/bugs-bunny.webp",
     "alt": "Bugs Bunny sur cible C50",
     "category": "bullet art",
@@ -160,7 +168,7 @@
     "description": "Bugs Bunny - cible C50 cadre bois et verre - 70 x 70 cm"
   },
   {
-    "id": 121,
+    "id": 122,
     "path": "/bullet_art/elmer.webp",
     "alt": "Elmer le chasseur sur cible C50",
     "category": "bullet art",
@@ -168,7 +176,7 @@
     "description": "Elmer - cible C50 cadre bois et verre - 70 x 70 cm"
   },
   {
-    "id": 122,
+    "id": 123,
     "path": "/bullet_art/bip-bip-et-coyote.webp",
     "alt": "Bip Bip et Coyote sur cible C50",
     "category": "bullet art",
@@ -176,7 +184,7 @@
     "description": "Bip Bip et Coyote - cible C50 cadre bois et verre - 70 x 70 cm"
   },
   {
-    "id": 123,
+    "id": 124,
     "path": "/bullet_art/taz.webp",
     "alt": "Taz le diable de Tasmanie sur cible C50",
     "category": "bullet art",
@@ -184,7 +192,7 @@
     "description": "Taz - cible C50 cadre bois et verre - 70 x 70 cm"
   },
   {
-    "id": 124,
+    "id": 125,
     "path": "/bullet_art/fous-du-volant.webp",
     "alt": "Les fous du volant sur cible C50",
     "category": "bullet art",
@@ -192,7 +200,7 @@
     "description": "Les fous du volant - cible C50 cadre bois et verre - 70 x 70 cm"
   },
   {
-    "id": 125,
+    "id": 126,
     "path": "/bullet_art/coyote.webp",
     "alt": "Coyotte sur cible cœur de C50",
     "category": "bullet art",
@@ -200,7 +208,7 @@
     "description": "cible cœur de C50 cadre bois et verre - 30 x 30 cm"
   },
   {
-    "id": 126,
+    "id": 127,
     "path": "/bullet_art/bip-bip.webp",
     "alt": "Bip Bip sur cible cœur de C50",
     "category": "bullet art",
@@ -208,7 +216,7 @@
     "description": "cible cœur de C50 cadre bois et verre - 30 x 30 cm"
   },
   {
-    "id": 127,
+    "id": 128,
     "path": "/bullet_art/bip-bip-situation.webp",
     "alt": "Bip Bip sur cible en situation",
     "category": "bullet art",
@@ -216,7 +224,7 @@
     "description": ""
   },
   {
-    "id": 128,
+    "id": 129,
     "path": "/bullet_art/stitch.webp",
     "alt": "Stitch sur cible C50",
     "category": "bullet art",
@@ -224,7 +232,7 @@
     "description": "Stitch - cible C50 cadre bois et verre - 70 x 70 cm"
   },
   {
-    "id": 129,
+    "id": 130,
     "path": "/bullet_art/bang.webp",
     "alt": "Bang avec réplique d'arme",
     "category": "bullet art",
