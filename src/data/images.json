@@ -12,7 +12,7 @@
     "path": "/bullet_art/popeye.webp",
     "alt": "Popeye",
     "category": "bullet art",
-    "status": "dispo",
+    "status": "vendu",
     "description": ""
   },
   {
@@ -20,7 +20,7 @@
     "path": "/bullet_art/homer-BA.webp",
     "alt": "Homer Simpsons en Bullet Art",
     "category": "bullet art",
-    "status": "",
+    "status": "vendu",
     "description": "Homer"
   },
   {
@@ -60,7 +60,7 @@
     "path": "/bullet_art/abraham-lincoln.webp",
     "alt": "Abraham Lincoln",
     "category": "bullet art",
-    "status": "dispo",
+    "status": "",
     "description": "Lincoln - cible C50 cadre bois et verre - 70 x 70 cm"
   },
   {
@@ -68,7 +68,7 @@
     "path": "/bullet_art/kennedy.webp",
     "alt": "John Fitzgerald Kennedy",
     "category": "bullet art",
-    "status": "dispo",
+    "status": "",
     "description": "Kennedy - cible C50 cadre bois et verre - 70 x 70 cm"
   },
   {
@@ -76,7 +76,7 @@
     "path": "/bullet_art/trump.webp",
     "alt": "Donald Trump",
     "category": "bullet art",
-    "status": "dispo",
+    "status": "",
     "description": "Trump - cible C50 cadre bois et verre - 70 x 70 cm"
   },
   {
@@ -105,62 +105,126 @@
   },
   {
     "id": 114,
-    "path": "/bullet_art/captain-america-c50.webp",
-    "alt": "Captain America sur cible C50",
+    "path": "/bullet_art/porsche.webp",
+    "alt": "Porsche jaune sur cible C50",
     "category": "bullet art",
     "status": "",
-    "description": "Captain America - cible C50 cadre bois et verre - 70 x 70 cm"
+    "description": ""
   },
   {
     "id": 115,
-    "path": "/bullet_art/deadpool.webp",
-    "alt": "Deadpool sur cible C50",
+    "path": "/bullet_art/bleach.webp",
+    "alt": "Bleach sur cible C50",
     "category": "bullet art",
-    "status": "",
-    "description": "Deadpool - cible C50 cadre bois et verre - 70 x 70 cm"
+    "status": "vendu",
+    "description": ""
   },
   {
     "id": 116,
-    "path": "/bullet_art/wolverine.webp",
-    "alt": "Wolverine sur cible C50",
+    "path": "/bullet_art/spidey.webp",
+    "alt": "Spiderman Héro sur cible C50",
     "category": "bullet art",
-    "status": "dispo",
-    "description": "Wolverine BD - cible C50 cadre bois et verre - 70 x 70 cm"
+    "status": "vendu",
+    "description": "cible cœur de C50 cadre bois et verre - 30 x 30 cm"
   },
   {
     "id": 117,
+    "path": "/bullet_art/captain-america-c50.webp",
+    "alt": "Captain America sur cible C50",
+    "category": "bullet art",
+    "status": "vendu",
+    "description": "Captain America - cible C50 cadre bois et verre - 70 x 70 cm"
+  },
+  {
+    "id": 118,
+    "path": "/bullet_art/superman.webp",
+    "alt": "Superman sur cible C50",
+    "category": "bullet art",
+    "status": "",
+    "description": ""
+  },
+  {
+    "id": 119,
+    "path": "/bullet_art/wonder-woman-cible.webp",
+    "alt": "Wonder Woman sur cible C50",
+    "category": "bullet art",
+    "status": "vendu",
+    "description": "Wonder Woman - cible C50 cadre bois et verre - 70 x 70 cm"
+  },
+  {
+    "id": 120,
+    "path": "/bullet_art/deadpool.webp",
+    "alt": "Deadpool sur cible C50",
+    "category": "bullet art",
+    "status": "vendu",
+    "description": "Deadpool - cible C50 cadre bois et verre - 70 x 70 cm"
+  },
+  {
+    "id": 121,
+    "path": "/bullet_art/wolverine.webp",
+    "alt": "Wolverine sur cible C50",
+    "category": "bullet art",
+    "status": "",
+    "description": "Wolverine BD - cible C50 cadre bois et verre - 70 x 70 cm"
+  },
+  {
+    "id": 122,
+    "path": "/bullet_art/wolverine2.webp",
+    "alt": "Wolverine déchire une cible C50",
+    "category": "bullet art",
+    "status": "",
+    "description": "Wolverine déchire - cible C50 cadre bois et verre - 70 x 70 cm"
+  },
+  {
+    "id": 123,
     "path": "/bullet_art/spiderman.webp",
     "alt": "Spiderman BD sur cible C50",
+    "category": "bullet art",
+    "status": "vendu",
+    "description": "Spiderman BD - cible C50 cadre bois et verre - 70 x 70 cm"
+  },
+  {
+    "id": 124,
+    "path": "/bullet_art/spiderman2.webp",
+    "alt": "Spiderman suite BD sur cible C50",
     "category": "bullet art",
     "status": "",
     "description": "Spiderman BD - cible C50 cadre bois et verre - 70 x 70 cm"
   },
   {
-    "id": 118,
-    "path": "/bullet_art/spiderman2.webp",
-    "alt": "Spiderman suite BD sur cible C51",
+    "id": 125,
+    "path": "/bullet_art/tigra-et-spidey.webp",
+    "alt": "Tigra et Spidey vs hunter",
     "category": "bullet art",
-    "status": "dispo",
-    "description": "Spiderman BD - cible C50 cadre bois et verre - 70 x 70 cm"
+    "status": "",
+    "description": "Tigra et Spidey BD - cible C50 cadre bois et verre - 70 x 70 cm"
   },
   {
-    "id": 119,
+    "id": 126,
     "path": "/bullet_art/catwoman-cible.webp",
-    "alt": "Catwoman BD sur cible C51",
+    "alt": "Catwoman BD sur cible C50",
     "category": "bullet art",
     "status": "",
     "description": "Catwoman BD - cible C50 cadre bois et verre - 70 x 70 cm"
   },
   {
-    "id": 120,
+    "id": 127,
+    "path": "/bullet_art/Ironman-cible.webp",
+    "alt": "Iron man BD sur cible C50",
+    "category": "bullet art",
+    "status": "",
+    "description": "Iron Man BD - cible C50 cadre bois et verre - 70 x 70 cm"
+  },
+  {
+    "id": 128,
     "path": "/bullet_art/cyclope-cible.webp",
-    "alt": "Cyclope BD sur cible C51",
+    "alt": "Cyclope BD sur cible C50",
     "category": "bullet art",
     "status": "",
     "description": "Cyclope BD - cible C50 cadre bois et verre - 70 x 70 cm"
   },
   {
-    "id": 121,
+    "id": 129,
     "path": "/bullet_art/batman-cible-prod.webp",
     "alt": "Batman sur cible C50",
     "category": "bullet art",
@@ -168,7 +232,7 @@
     "description": ""
   },
   {
-    "id": 122,
+    "id": 130,
     "path": "/bullet_art/batman-cible-situation.webp",
     "alt": "Batman sur cible C50 en situation",
     "category": "bullet art",
@@ -176,31 +240,39 @@
     "description": ""
   },
   {
-    "id": 123,
+    "id": 131,
+    "path": "/bullet_art/pirates.webp",
+    "alt": "Pirates sur cible C50",
+    "category": "bullet art",
+    "status": "vendu",
+    "description": ""
+  },
+  {
+    "id": 132,
     "path": "/bullet_art/buzz-lightyear.webp",
     "alt": "Buzz l’Éclair sur cible C50",
     "category": "bullet art",
-    "status": "dispo",
+    "status": "",
     "description": "Buzz l’Éclair - cible C50 cadre bois et verre - 70 x 70 cm"
   },
   {
-    "id": 124,
+    "id": 133,
     "path": "/bullet_art/titi-et-grosminet.webp",
     "alt": "Titi et Grosminet sur cible C50",
     "category": "bullet art",
-    "status": "",
+    "status": "vendu",
     "description": "Titi et Grosminet - cible C50 cadre bois et verre - 70 x 70 cm"
   },
   {
-    "id": 125,
+    "id": 134,
     "path": "/bullet_art/bugs-bunny.webp",
     "alt": "Bugs Bunny sur cible C50",
     "category": "bullet art",
-    "status": "dispo",
+    "status": "",
     "description": "Bugs Bunny - cible C50 cadre bois et verre - 70 x 70 cm"
   },
   {
-    "id": 126,
+    "id": 135,
     "path": "/bullet_art/elmer.webp",
     "alt": "Elmer le chasseur sur cible C50",
     "category": "bullet art",
@@ -208,47 +280,47 @@
     "description": "Elmer - cible C50 cadre bois et verre - 70 x 70 cm"
   },
   {
-    "id": 127,
+    "id": 136,
     "path": "/bullet_art/bip-bip-et-coyote.webp",
     "alt": "Bip Bip et Coyote sur cible C50",
     "category": "bullet art",
-    "status": "dispo",
+    "status": "",
     "description": "Bip Bip et Coyote - cible C50 cadre bois et verre - 70 x 70 cm"
   },
   {
-    "id": 128,
+    "id": 137,
     "path": "/bullet_art/taz.webp",
     "alt": "Taz le diable de Tasmanie sur cible C50",
     "category": "bullet art",
-    "status": "dispo",
+    "status": "vendu",
     "description": "Taz - cible C50 cadre bois et verre - 70 x 70 cm"
   },
   {
-    "id": 129,
+    "id": 138,
     "path": "/bullet_art/fous-du-volant.webp",
     "alt": "Les fous du volant sur cible C50",
     "category": "bullet art",
-    "status": "dispo",
+    "status": "",
     "description": "Les fous du volant - cible C50 cadre bois et verre - 70 x 70 cm"
   },
   {
-    "id": 130,
+    "id": 139,
     "path": "/bullet_art/coyote.webp",
     "alt": "Coyotte sur cible cœur de C50",
     "category": "bullet art",
-    "status": "dispo",
+    "status": "",
     "description": "cible cœur de C50 cadre bois et verre - 30 x 30 cm"
   },
   {
-    "id": 131,
+    "id": 140,
     "path": "/bullet_art/bip-bip.webp",
     "alt": "Bip Bip sur cible cœur de C50",
     "category": "bullet art",
-    "status": "dispo",
+    "status": "",
     "description": "cible cœur de C50 cadre bois et verre - 30 x 30 cm"
   },
   {
-    "id": 132,
+    "id": 141,
     "path": "/bullet_art/bip-bip-situation.webp",
     "alt": "Bip Bip sur cible en situation",
     "category": "bullet art",
@@ -256,15 +328,15 @@
     "description": ""
   },
   {
-    "id": 133,
+    "id": 142,
     "path": "/bullet_art/stitch.webp",
     "alt": "Stitch sur cible C50",
     "category": "bullet art",
-    "status": "",
+    "status": "vendu",
     "description": "Stitch - cible C50 cadre bois et verre - 70 x 70 cm"
   },
   {
-    "id": 134,
+    "id": 143,
     "path": "/bullet_art/bang.webp",
     "alt": "Bang avec réplique d'arme",
     "category": "bullet art",
@@ -276,7 +348,7 @@
     "path": "/mondrian/mondrian1.webp",
     "alt": "Mondrian 1",
     "category": "mondrian",
-    "status": "",
+    "status": "vendu",
     "description": "toile sur caisse américaine - 150 x 100 cm"
   },
   {
@@ -284,7 +356,7 @@
     "path": "/mondrian/mondrian-simpson.webp",
     "alt": "Mondrian ensemble Simpson",
     "category": "mondrian",
-    "status": "dispo",
+    "status": "",
     "description": "toile sur caisse américaine - 120 x 120 cm"
   },
   {
@@ -292,7 +364,7 @@
     "path": "/mondrian/mondrian2.webp",
     "alt": "Mondrian 2",
     "category": "mondrian",
-    "status": "dispo",
+    "status": "",
     "description": "toile sur caisse américaine - 150 x 100 cm"
   },
   {
@@ -308,7 +380,7 @@
     "path": "/mondrian/mondrian3.webp",
     "alt": "Mondrian 3",
     "category": "mondrian",
-    "status": "",
+    "status": "vendu",
     "description": "toile sur caisse américaine - 150 x 100 cm"
   },
   {
@@ -316,7 +388,7 @@
     "path": "/mondrian/mondrian-jeux-video.webp",
     "alt": "Mondrian jeux vidéo",
     "category": "mondrian",
-    "status": "dispo",
+    "status": "",
     "description": "80 x 60 cm"
   },
   {
@@ -324,7 +396,7 @@
     "path": "/mondrian/mondrian-manga.webp",
     "alt": "Mondrian manga",
     "category": "mondrian",
-    "status": "dispo",
+    "status": "",
     "description": "80 x 60 cm"
   },
   {
@@ -340,7 +412,7 @@
     "path": "/mondrian/big-mondrian.webp",
     "alt": "Big Mondrian",
     "category": "mondrian",
-    "status": "",
+    "status": "vendu",
     "description": "toile sur caisse américaine - 100 x 150 cm"
   },
   {
@@ -348,7 +420,7 @@
     "path": "/autre/lego.webp",
     "alt": "Lego",
     "category": "autres",
-    "status": "dispo",
+    "status": "",
     "description": "Lego - papier sur cadre verre - 77 x 62 cm"
   },
   {
@@ -364,7 +436,7 @@
     "path": "/autre/le-rat-de-B.webp",
     "alt": "Le rat de B",
     "category": "autres",
-    "status": "dispo",
+    "status": "",
     "description": "Le rat de B - toile sur caisse américaineé - 65 x 54 cm"
   },
   {
@@ -372,7 +444,7 @@
     "path": "/autre/graph.webp",
     "alt": "Graffiti par Phil",
     "category": "autres",
-    "status": "",
+    "status": "vendu",
     "description": "toile sur caisse américaine - 100 x 73 cm"
   },
   {
@@ -380,7 +452,7 @@
     "path": "/autre/poker.webp",
     "alt": "Poker super héros",
     "category": "autres",
-    "status": "",
+    "status": "vendu",
     "description": "Poker - dessin sur cadre verre - 70 x 50 cm"
   },
   {
@@ -388,7 +460,7 @@
     "path": "/autre/no_war.webp",
     "alt": "No war",
     "category": "autres",
-    "status": "dispo",
+    "status": "",
     "description": "No War - toile sur caisse américaine - 150 x 100 cm"
   },
   {
@@ -396,7 +468,7 @@
     "path": "/autre/Dragon_ball.webp",
     "alt": "Dragon Ball Z",
     "category": "autres",
-    "status": "dispo",
+    "status": "",
     "description": "DBZ - toile sur caisse américaine - 46 x 38 cm"
   },
   {
@@ -404,7 +476,7 @@
     "path": "/autre/vm-automobiles.webp",
     "alt": "super héros dans une décapotable noire",
     "category": "autres",
-    "status": "",
+    "status": "vendu",
     "description": ""
   },
   {
@@ -412,7 +484,7 @@
     "path": "/autre/dog-graph.webp",
     "alt": "bouledogue graffiti",
     "category": "autres",
-    "status": "",
+    "status": "vendu",
     "description": ""
   },
   {
@@ -420,7 +492,7 @@
     "path": "/autre/wonder-woman.webp",
     "alt": "Wonder Woman is a big slut",
     "category": "autres",
-    "status": "dispo",
+    "status": "",
     "description": "Catwoman - papier sur cadre verre - 77 x 62 cm"
   },
   {
@@ -436,7 +508,7 @@
     "path": "/autre/peace.webp",
     "alt": "Graffiti PEACE",
     "category": "autres",
-    "status": "dispo",
+    "status": "vendu",
     "description": "Peace - toile sur caisse américaine - 100 x 116 cm"
   },
   {
@@ -452,7 +524,7 @@
     "path": "/autre/timbre-wonder-woman.webp",
     "alt": "Timbre géant Wonder Woman",
     "category": "autres",
-    "status": "",
+    "status": "vendu",
     "description": ""
   },
   {
@@ -460,7 +532,7 @@
     "path": "/autre/butt-poker.webp",
     "alt": "Graffeuse et jeux de carte",
     "category": "autres",
-    "status": "",
+    "status": "vendu",
     "description": ""
   },
   {
@@ -468,7 +540,7 @@
     "path": "/autre/donkey-kong-vs-mario.webp",
     "alt": "Donkey kong version Orlinski contre super mario gillet jaune",
     "category": "autres",
-    "status": "",
+    "status": "vendu",
     "description": ""
   },
   {
@@ -484,7 +556,7 @@
     "path": "/autre/disney-chanel.webp",
     "alt": "Bouteille du parfum Disney CHANEL en situation",
     "category": "autres",
-    "status": "",
+    "status": "vendu",
     "description": ""
   },
   {
@@ -492,7 +564,7 @@
     "path": "/autre/breaded-fish.webp",
     "alt": "I hate breaded fish !",
     "category": "autres",
-    "status": "dispo",
+    "status": "",
     "description": "Breaded Fish - papier sur cadre verre - 77 x 62 cm"
   },
   {
@@ -508,7 +580,7 @@
     "path": "/autre/wonder-woman-warhol.webp",
     "alt": "Wonder Woman style Warhol",
     "category": "autres",
-    "status": "dispo",
+    "status": "",
     "description": "toile sur caisse américaine - 70 x 50 cm"
   },
   {
@@ -516,7 +588,7 @@
     "path": "/autre/blanche-neige.webp",
     "alt": "Blanche neige grenade",
     "category": "autres",
-    "status": "",
+    "status": "vendu",
     "description": ""
   },
   {
@@ -524,7 +596,7 @@
     "path": "/autre/captain-america.webp",
     "alt": "Captain America",
     "category": "autres",
-    "status": "",
+    "status": "vendu",
     "description": ""
   },
   {
@@ -532,7 +604,7 @@
     "path": "/autre/Pura-Vida.webp",
     "alt": "Pura Vida Mini et la défonce",
     "category": "autres",
-    "status": "",
+    "status": "vendu",
     "description": "toile sur caisse américaine - 130 x 100 cm"
   },
   {
@@ -540,7 +612,7 @@
     "path": "/autre/romy.webp",
     "alt": "Mini et Romy",
     "category": "autres",
-    "status": "",
+    "status": "vendu",
     "description": "Romy - toile sur caisse américaine - 130 x 80 cm"
   },
   {
@@ -548,7 +620,7 @@
     "path": "/autre/maryline-monroe.webp",
     "alt": "Maryline Monroe en graffiti",
     "category": "autres",
-    "status": "",
+    "status": "vendu",
     "description": ""
   },
   {
@@ -556,7 +628,7 @@
     "path": "/autre/eternel-berger.webp",
     "alt": "l'éternel est mon berger je ne manquerai de rien psaume 23",
     "category": "autres",
-    "status": "",
+    "status": "vendu",
     "description": ""
   },
   {
@@ -564,7 +636,7 @@
     "path": "/autre/le-loft.webp",
     "alt": "Graffiti pour le Loft",
     "category": "autres",
-    "status": "",
+    "status": "vendu",
     "description": ""
   },
   {
@@ -572,7 +644,7 @@
     "path": "/autre/carpes.webp",
     "alt": "Carpes Koï",
     "category": "autres",
-    "status": "dispo",
+    "status": "",
     "description": "Carpes Koï - papier sur cadre verre - 77 x 62 cm"
   },
   {
@@ -580,7 +652,7 @@
     "path": "/autre/tortue-geniale.webp",
     "alt": "Tortue Géniale",
     "category": "autres",
-    "status": "",
+    "status": "vendu",
     "description": "Tortue Géniale - dessin - 70 x 60 cm"
   },
   {
@@ -588,7 +660,7 @@
     "path": "/autre/epitre-aux-corinthiens.webp",
     "alt": "Épître de Paul aux Corinthiens chapitre 13. l'amour",
     "category": "autres",
-    "status": "",
+    "status": "vendu",
     "description": ""
   },
   {
@@ -596,7 +668,7 @@
     "path": "/autre/amour-patiente.webp",
     "alt": "L'Amour est patiente",
     "category": "autres",
-    "status": "dispo",
+    "status": "",
     "description": "L’Amour - toile sur caisse américaine - 130 x 200 cm"
   },
   {
@@ -628,7 +700,7 @@
     "path": "/autre/bad-bitch.webp",
     "alt": "Bad Bitch",
     "category": "autres",
-    "status": "",
+    "status": "vendu",
     "description": ""
   },
   {
@@ -636,7 +708,7 @@
     "path": "/autre/leopard.webp",
     "alt": "Léopard de l'Amour",
     "category": "autres",
-    "status": "dispo",
+    "status": "",
     "description": "toile - 150 x 100 cm"
   },
   {
@@ -652,7 +724,7 @@
     "path": "/autre/justice.webp",
     "alt": "Justice en France",
     "category": "autres",
-    "status": "",
+    "status": "vendu",
     "description": "Justice - dessin - 70 x 50 cm"
   },
   {

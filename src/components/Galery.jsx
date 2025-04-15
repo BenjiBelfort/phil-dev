@@ -12,9 +12,9 @@ const stains = [
 ];
 
 const statusColors = {
-  "dispo": "bg-green-500",
+  // "dispo": "bg-green-500",
   "vendu": "bg-red-500",
-  "en cours": "bg-yellow-500",
+  // "en cours": "bg-yellow-500",
 };
 
 const categoryDescriptions = {
@@ -243,3 +243,4 @@ const Galery = () => {
 };
 
 export default Galery;
+

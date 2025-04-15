@@ -99,7 +99,7 @@ const Contact = () => {
   return (
     <section
       id="contact"
-      className="bg-gradient-to-b from-slate-900 to-slate-950 py-16 flex flex-col items-center"
+      className="bg-gradient-to-b from-slate-900 to-slate-950 py-16 flex flex-col items-center scroll-mt-4"
     >
       {/* Titre */}
       <h3 className="uppercase font-primary text-white text-5xl md:text-7xl text-center mb-12">Contact</h3>

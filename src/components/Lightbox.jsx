@@ -70,6 +70,11 @@ const Lightbox = ({
       >
         &#8250;
       </button>
+      <img
+        src="/phil-logo-white.png"
+        alt="Logo Phil dans lightbox"
+        className="block absolute bottom-4 right-4 md:right-20 w-16 md:w-20"
+      />
     </div>
   );
 };
