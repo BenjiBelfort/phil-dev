@@ -23,7 +23,7 @@ jobs:
         run: npm run build
 
       - name: Deploy to OVH via FTP
-        uses: ncipollo/ftp-deploy@v1
+        uses: SamKirkland/FTP-Deploy-Action@v4
         with:
           server: ${{ secrets.FTP_HOST }}
           username: ${{ secrets.FTP_USERNAME }}
