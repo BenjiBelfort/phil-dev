@@ -32,5 +32,10 @@ const fullXml = xmlHeader + imageXml + "\n" + xmlFooter;
 
 console.log("📄 XML généré :\n", fullXml);
 
-fs.writeFileSync(path.join(__dirname, "dist/sitemap-images.xml"), fullXml);
+// 🔧 Créer le dossier dist/ s'il n'existe pas
+const outputDir = path.join(__dirname, "dist");
+fs.mkdirSync(outputDir, { recursive: true });
+
+// ✅ Écriture du fichier
+fs.writeFileSync(path.join(outputDir, "sitemap-images.xml"), fullXml);
 console.log("✅ sitemap-images.xml généré !");
