@@ -10,7 +10,7 @@ const Footer = () => {
                 <img src="/target.png" alt="Cible blanche" className="w-4"/>
             </div>
             <p>Tous droits réservés.</p>
-            <a className="hover:text-amber-400 transition-colors" href="https://benji-belfort-portfolio.netlify.app/" target="_blank" rel="noopener noreferrer">Dev by Benji Belfort</a>
+            <a className="hover:text-amber-400 transition-colors" href="https://benji-belfort-portfolio.netlify.app/" target="_blank" rel="noopener noreferrer">Dev by Benji Belfort.</a>
         </footer>
     );
 }
