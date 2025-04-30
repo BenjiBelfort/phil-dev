@@ -38,7 +38,7 @@ const GalleryGrid = ({ images, openLightbox, statusColors, filterKey }) => {
             <div className="relative w-full h-full">
               <img
                 src={item.path}
-                alt={item.alt}
+                alt={`${item.alt} - Bullet Art`}
                 loading="lazy"
                 className="w-full h-full object-cover rounded-lg"
               />

@@ -31,7 +31,8 @@ const Lightbox = ({
           <div className="relative inline-block overflow-hidden rounded-lg">
             <img
               src={currentItem.path}
-              alt={currentItem.alt}
+              alt={`${currentItem.alt} - Bullet Art`}
+              loading="lazy"
               className="max-w-[90vw] max-h-[90vh] object-contain rounded-lg"
             />
             {currentItem.status && (
