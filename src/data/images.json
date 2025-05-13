@@ -12,7 +12,7 @@
     "path": "/bullet_art/popeye.webp",
     "alt": "Popeye",
     "category": "bullet art",
-    "status": "vendu",
+    "status": "",
     "description": ""
   },
   {
@@ -20,7 +20,7 @@
     "path": "/bullet_art/homer-BA.webp",
     "alt": "Homer Simpsons en Bullet Art",
     "category": "bullet art",
-    "status": "vendu",
+    "status": "",
     "description": "Homer"
   },
   {
@@ -140,7 +140,7 @@
     "path": "/bullet_art/trois-maillets.webp",
     "alt": "Panneau d’affichage pour le restaurant",
     "category": "bullet art",
-    "status": "vendu",
+    "status": "",
     "description": ""
   },
   {
@@ -148,7 +148,7 @@
     "path": "/bullet_art/bleach.webp",
     "alt": "Bleach sur cible C50",
     "category": "bullet art",
-    "status": "vendu",
+    "status": "",
     "description": ""
   },
   {
@@ -156,7 +156,7 @@
     "path": "/bullet_art/spidey.webp",
     "alt": "Spiderman Héro sur cible C50",
     "category": "bullet art",
-    "status": "vendu",
+    "status": "",
     "description": "cible cœur de C50 cadre bois et verre - 30 x 30 cm"
   },
   {
@@ -164,7 +164,7 @@
     "path": "/bullet_art/captain-america-c50.webp",
     "alt": "Captain America sur cible C50",
     "category": "bullet art",
-    "status": "vendu",
+    "status": "",
     "description": "Captain America - cible C50 cadre bois et verre - 70 x 70 cm"
   },
   {
@@ -188,7 +188,7 @@
     "path": "/bullet_art/wonder-woman-cible.webp",
     "alt": "Wonder Woman sur cible C50",
     "category": "bullet art",
-    "status": "vendu",
+    "status": "",
     "description": "Wonder Woman - cible C50 cadre bois et verre - 70 x 70 cm"
   },
   {
@@ -196,7 +196,7 @@
     "path": "/bullet_art/deadpool.webp",
     "alt": "Deadpool sur cible C50",
     "category": "bullet art",
-    "status": "vendu",
+    "status": "",
     "description": "Deadpool - cible C50 cadre bois et verre - 70 x 70 cm"
   },
   {
@@ -220,7 +220,7 @@
     "path": "/bullet_art/spiderman.webp",
     "alt": "Spiderman BD sur cible C50",
     "category": "bullet art",
-    "status": "vendu",
+    "status": "",
     "description": "Spiderman BD - cible C50 cadre bois et verre - 70 x 70 cm"
   },
   {
@@ -284,7 +284,7 @@
     "path": "/bullet_art/pirates.webp",
     "alt": "Pirates sur cible C50",
     "category": "bullet art",
-    "status": "vendu",
+    "status": "",
     "description": ""
   },
   {
@@ -300,7 +300,7 @@
     "path": "/bullet_art/titi-et-grosminet.webp",
     "alt": "Titi et Grosminet sur cible C50",
     "category": "bullet art",
-    "status": "vendu",
+    "status": "",
     "description": "Titi et Grosminet - cible C50 cadre bois et verre - 70 x 70 cm"
   },
   {
@@ -332,7 +332,7 @@
     "path": "/bullet_art/taz.webp",
     "alt": "Taz le diable de Tasmanie sur cible C50",
     "category": "bullet art",
-    "status": "vendu",
+    "status": "",
     "description": "Taz - cible C50 cadre bois et verre - 70 x 70 cm"
   },
   {
@@ -372,7 +372,7 @@
     "path": "/bullet_art/stitch.webp",
     "alt": "Stitch sur cible C50",
     "category": "bullet art",
-    "status": "vendu",
+    "status": "",
     "description": "Stitch - cible C50 cadre bois et verre - 70 x 70 cm"
   },
   {
@@ -380,7 +380,7 @@
     "path": "/bullet_art/bang.webp",
     "alt": "Bang avec réplique d'arme",
     "category": "bullet art",
-    "status": "vendu",
+    "status": "",
     "description": "BANG! - bois et réplique - 40 x 80 cm"
   },
   {
@@ -388,7 +388,7 @@
     "path": "/mondrian/mondrian1.webp",
     "alt": "Mondrian 1",
     "category": "mondrian",
-    "status": "vendu",
+    "status": "",
     "description": "toile sur caisse américaine - 150 x 100 cm"
   },
   {
@@ -420,7 +420,7 @@
     "path": "/mondrian/mondrian3.webp",
     "alt": "Mondrian 3",
     "category": "mondrian",
-    "status": "vendu",
+    "status": "",
     "description": "toile sur caisse américaine - 150 x 100 cm"
   },
   {
@@ -452,7 +452,7 @@
     "path": "/mondrian/big-mondrian.webp",
     "alt": "Big Mondrian",
     "category": "mondrian",
-    "status": "vendu",
+    "status": "",
     "description": "toile sur caisse américaine - 100 x 150 cm"
   },
   {
@@ -484,7 +484,7 @@
     "path": "/autre/graph.webp",
     "alt": "Graffiti par Phil",
     "category": "autres",
-    "status": "vendu",
+    "status": "",
     "description": "toile sur caisse américaine - 100 x 73 cm"
   },
   {
@@ -492,7 +492,7 @@
     "path": "/autre/poker.webp",
     "alt": "Poker super héros",
     "category": "autres",
-    "status": "vendu",
+    "status": "",
     "description": "Poker - dessin sur cadre verre - 70 x 50 cm"
   },
   {
@@ -516,7 +516,7 @@
     "path": "/autre/vm-automobiles.webp",
     "alt": "super héros dans une décapotable noire",
     "category": "autres",
-    "status": "vendu",
+    "status": "",
     "description": ""
   },
   {
@@ -524,7 +524,7 @@
     "path": "/autre/dog-graph.webp",
     "alt": "bouledogue graffiti",
     "category": "autres",
-    "status": "vendu",
+    "status": "",
     "description": ""
   },
   {
@@ -548,7 +548,7 @@
     "path": "/autre/peace.webp",
     "alt": "Graffiti PEACE",
     "category": "autres",
-    "status": "vendu",
+    "status": "",
     "description": "Peace - toile sur caisse américaine - 100 x 116 cm"
   },
   {
@@ -564,7 +564,7 @@
     "path": "/autre/timbre-wonder-woman.webp",
     "alt": "Timbre géant Wonder Woman",
     "category": "autres",
-    "status": "vendu",
+    "status": "",
     "description": ""
   },
   {
@@ -572,7 +572,7 @@
     "path": "/autre/butt-poker.webp",
     "alt": "Graffeuse et jeux de carte",
     "category": "autres",
-    "status": "vendu",
+    "status": "",
     "description": ""
   },
   {
@@ -580,7 +580,7 @@
     "path": "/autre/donkey-kong-vs-mario.webp",
     "alt": "Donkey kong version Orlinski contre super mario gillet jaune",
     "category": "autres",
-    "status": "vendu",
+    "status": "",
     "description": ""
   },
   {
@@ -596,7 +596,7 @@
     "path": "/autre/disney-chanel.webp",
     "alt": "Bouteille du parfum Disney CHANEL en situation",
     "category": "autres",
-    "status": "vendu",
+    "status": "",
     "description": ""
   },
   {
@@ -628,7 +628,7 @@
     "path": "/autre/blanche-neige.webp",
     "alt": "Blanche neige grenade",
     "category": "autres",
-    "status": "vendu",
+    "status": "",
     "description": ""
   },
   {
@@ -636,7 +636,7 @@
     "path": "/autre/captain-america.webp",
     "alt": "Captain America",
     "category": "autres",
-    "status": "vendu",
+    "status": "",
     "description": ""
   },
   {
@@ -644,7 +644,7 @@
     "path": "/autre/Pura-Vida.webp",
     "alt": "Pura Vida Mini et la défonce",
     "category": "autres",
-    "status": "vendu",
+    "status": "",
     "description": "toile sur caisse américaine - 130 x 100 cm"
   },
   {
@@ -652,7 +652,7 @@
     "path": "/autre/romy.webp",
     "alt": "Mini et Romy",
     "category": "autres",
-    "status": "vendu",
+    "status": "",
     "description": "Romy - toile sur caisse américaine - 130 x 80 cm"
   },
   {
@@ -660,7 +660,7 @@
     "path": "/autre/maryline-monroe.webp",
     "alt": "Maryline Monroe en graffiti",
     "category": "autres",
-    "status": "vendu",
+    "status": "",
     "description": ""
   },
   {
@@ -668,7 +668,7 @@
     "path": "/autre/eternel-berger.webp",
     "alt": "l'éternel est mon berger je ne manquerai de rien psaume 23",
     "category": "autres",
-    "status": "vendu",
+    "status": "",
     "description": ""
   },
   {
@@ -676,7 +676,7 @@
     "path": "/autre/le-loft.webp",
     "alt": "Graffiti pour le Loft",
     "category": "autres",
-    "status": "vendu",
+    "status": "",
     "description": ""
   },
   {
@@ -692,7 +692,7 @@
     "path": "/autre/tortue-geniale.webp",
     "alt": "Tortue Géniale",
     "category": "autres",
-    "status": "vendu",
+    "status": "",
     "description": "Tortue Géniale - dessin - 70 x 60 cm"
   },
   {
@@ -700,7 +700,7 @@
     "path": "/autre/epitre-aux-corinthiens.webp",
     "alt": "Épître de Paul aux Corinthiens chapitre 13. l'amour",
     "category": "autres",
-    "status": "vendu",
+    "status": "",
     "description": ""
   },
   {
@@ -740,7 +740,7 @@
     "path": "/autre/bad-bitch.webp",
     "alt": "Bad Bitch",
     "category": "autres",
-    "status": "vendu",
+    "status": "",
     "description": ""
   },
   {
@@ -764,7 +764,7 @@
     "path": "/autre/justice.webp",
     "alt": "Justice en France",
     "category": "autres",
-    "status": "vendu",
+    "status": "",
     "description": "Justice - dessin - 70 x 50 cm"
   },
   {
