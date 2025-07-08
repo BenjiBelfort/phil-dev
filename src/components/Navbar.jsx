@@ -65,13 +65,13 @@ const Navbar = () => {
             />
             {/* Texte "Bullet Artiste" affiché seulement en haut de la page */}
             <h1
-              className={`absolute bottom-[-180px] lg:bottom-[-470px] left-0 text-white text-4xl lg:text-8xl font-secondary leading-tight text-drop-shadow uppercase transition-all duration-400 origin-top-left ${
+              className={`absolute bottom-[-130px] lg:bottom-[-350px] left-0 text-white text-4xl lg:text-8xl font-secondary leading-tight text-drop-shadow uppercase transition-all duration-400 origin-top-left ${
                 isScrolled
                   ? "opacity-0 translate-y-[-40px] scale-0 invisible"
                   : "scale-100 opacity-100 translate-y-0 visible"
               }`}
             >
-              Bullet <br /> Target <br /> Artiste
+              Bullet <br /> Artiste
             </h1>
 
           </div>
